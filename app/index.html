@@ -19,55 +19,62 @@
         ATLANTIDA
       </a>
       <ul class="main-nav__menu">
-        <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">home</a></li>
-        <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">about</a></li>
-        <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">services</a></li>
-        <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">history</a></li>
+        <li class="main-nav__menu-item"><a href="#about" class="main-nav__menu-link">about</a></li>
+        <li class="main-nav__menu-item"><a href="#services" class="main-nav__menu-link">services</a></li>
+        <li class="main-nav__menu-item"><a href="#history" class="main-nav__menu-link">history</a></li>
         <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">team</a></li>
         <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">portfolio</a></li>
         <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">prices</a></li>
         <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">blog</a></li>
-        <li class="main-nav__menu-item"><a href="" class="main-nav__menu-link">contact</a></li>
+        <li class="main-nav__menu-item"><a href="#footer" class="main-nav__menu-link">contact</a></li>
       </ul>
-      <ul class="main-nav__social">
-        <a href="" class="main-nav__social-link">1</a>
-        <a href="" class="main-nav__social-link">2</a>
-        <a href="" class="main-nav__social-link">3</a>
+
+      <ul class="social">
+        <a href="" class="social-link">
+          <img class="social-icon" src="img/social/facebook-light.png" alt="facebook icon and link" width="10" height="10">
+        </a>
+        <a href="" class="social-link social-link--divider">
+          <img class="social-icon social-icon--divider" src="img/social/tweter-light.png" alt="tweter icon and link" width="10" height="10">
+        </a>
+        <a href="" class="social-link">
+          <img class="social-icon" src="img/social/behance-light.png" alt="behance icone and link" width="15" height="10">
+        </a>
       </ul>
+      <!-- end social -->
     </nav>
     </div>
     <!-- edn nav -->
     <section class="header-hero">
-      <div class="header-hero__slider">
-        <div class="slider-box">
-          <h6 class="slider__sup-headline">design studio and digital agency</h6>
-          <h2 class="slider__headline">we are atlantida</h2>
-          <a href="" class="slider__button">get started</a>
-        </div>
+<div class="container">
+  <div class="header-hero__slider">
+    <div class="slider-box heroSlide">
+      <h6 class="slider__sup-headline">design studio and digital agency</h6>
+      <h2 class="slider__headline">we are atlantida</h2>
+      <a href="" class="slider__button">get started</a>
+    </div>
 
-          <div class="slider-box">
-            <h6 class="slider__sup-headline">design studio and digital agency</h6>
-            <h2 class="slider__headline">we are atlantida</h2>
-            <a href="" class="slider__button">get started</a>
-          </div>
+      <div class="slider-box heroSlide">
+        <h6 class="slider__sup-headline">tut yest nadpis</h6>
+        <h2 class="slider__headline">i ti ee chitaesh</h2>
+      </div>
 
-          <div class="slider-box">
-            <h6 class="slider__sup-headline">design studio and digital agency</h6>
-            <h2 class="slider__headline">we are atlantida</h2>
-            <a href="" class="slider__button">get started</a>
-          </div>
+      <div class="slider-box heroSlide">
+        <h6 class="slider__sup-headline">make! your! dream!</h6>
+        <h2 class="slider__headline">COME TRUE!!!</h2>
+        <a href="" class="slider__button">make my dream come true</a>
+      </div>
 
-          <button class="slider__swich--left"></button>
-          <button class="slider__swich--right"></button>
-        </div>
-        <!-- end slider -->
+      <button class="slider__swich--left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="slider__swich--right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    <!-- end slider -->
+  </div>
       </section>
       <!-- end hero -->
-    </div>
   </header>
 
   <main id="main">
-    <section class="about aboutus-section">
+    <section id="about" class="about aboutus-section">
       <div class="container">
         <div class="aboutus-card">
           <div class="aboutus-card__header"></div>
@@ -110,7 +117,7 @@
       </div>
     </section>
 
-    <section class="services services-section">
+    <section id="services" class="services services-section">
       <div class="container">
         <div class="services-section__header">
           <h1 class="services-section__header--title">services</h1>
@@ -141,7 +148,7 @@
 
             <div class="services-card__body">
               <p class="services-card__body-desription">
-                Nunc non sem vitae neque tristique pellentesque. Donec vitae vehicula mauris. Proin elementum mauris ut ante tristique rutrum. Quisque tristique, dui iaculis commodo consectetur, libero nibh tincidunt tortor, in sollicitudin arcu tellus non puruslibero nibh tincidunt tortor, in sollicitudin arcu 
+                Nunc non sem vitae neque tristique pellentesque. Donec vitae vehicula mauris. Proin elementum mauris ut ante tristique rutrum. Quisque tristique, dui iaculis commodo consectetur, libero nibh tincidunt tortor, in sollicitudin arcu tellus non puruslibero nibh tincidunt tortor, in sollicitudin arcu
               </p>
             </div>
           </div>
@@ -175,7 +182,7 @@
       </div>
     </section>
 
-    <section class="history history-section">
+    <section id="history" class="history history-section">
       <div class="container">
         <div class="history-section__header">
           <h1 class="history-section__header--title">history</h1>
@@ -286,13 +293,25 @@
   </main>
 
   <footer id="footer">
-
+    <ul class="social">
+      <a href="" class="social-link">
+        <img class="social-icon" src="img/social/facebook-light.png" alt="facebook icon and link" width="10" height="10">
+      </a>
+      <a href="" class="social-link social-link--divider">
+        <img class="social-icon social-icon--divider" src="img/social/tweter-light.png" alt="tweter icon and link" width="10" height="10">
+      </a>
+      <a href="" class="social-link">
+        <img class="social-icon" src="img/social/behance-light.png" alt="behance icone and link" width="15" height="10">
+      </a>
+    </ul>
+    <!-- end social -->
   </footer>
 
 
     <!-- script's -on -->
  <script src="js/libs.min.js"></script>
  <script src="js/common.js"></script>
+ <script src="js/hero-slide.js"></script>
     <!-- script's -off -->
 </body>
 </html>

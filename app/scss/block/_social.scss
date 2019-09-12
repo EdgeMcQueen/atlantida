@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 12px;
+
+&-link {
+
+  &--divider {
+
+      &::before {
+        content: '|';
+      }
+
+      &::after {
+        content: '|';
+      }
+  }
+}
+
+&-icon {
+
+}
+
+  }
