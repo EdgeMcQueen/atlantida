@@ -100,13 +100,10 @@ body {
   margin: 0 auto;
 }
 
-ul.inline li {
-  display: inline-block;
-  margin: 0 6px;
-}
-
 .header {
   background: #ffffff;
+  font-family: 'Montserrat-Regular', sans-serif;
+  color: #3e3d3d;
 }
 
 .header-hero {
@@ -114,9 +111,8 @@ ul.inline li {
 }
 
 .main-nav {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -130,8 +126,12 @@ ul.inline li {
 
 .main-nav__logo {
   font-size: 18px;
+  font-weight: 600;
   vertical-align: middle;
-  font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.main-nav__logo:visited {
+  color: #757575;
 }
 
 .main-nav__logo-img {
@@ -139,13 +139,28 @@ ul.inline li {
 }
 
 .main-nav__menu {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 580px;
+  height: 12px;
+  font-size: 12px;
+  color: #aaaaaa;
+}
+
+.main-nav__menu-link {
+  color: #aaaaaa;
+}
+
+.main-nav__menu-link:hover {
+  color: #555557;
+}
+
+.main-nav__menu-link:visited {
+  color: #3e3d3d;
 }

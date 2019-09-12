@@ -1,6 +1,7 @@
 .header {
   background: $bg-white;
-
+  @include montserrat-regular;
+  color: $font-dark  ;
 
   &-hero {
     background-image: url(../img/slider/Image.png);
