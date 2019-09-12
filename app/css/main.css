@@ -105,6 +105,14 @@ ul.inline li {
   margin: 0 6px;
 }
 
+.header {
+  background: #ffffff;
+}
+
+.header-hero {
+  background-image: url(../img/slider/Image.png);
+}
+
 .main-nav {
   display: -webkit-flex;
   display: -ms-flex;
@@ -117,9 +125,27 @@ ul.inline li {
           justify-content: space-between;
   width: 100%;
   height: 65px;
+  line-height: 65px;
 }
 
 .main-nav__logo {
-  height: 100%;
+  font-size: 18px;
+  vertical-align: middle;
   font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.main-nav__logo-img {
+  vertical-align: inherit;
+}
+
+.main-nav__menu {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
