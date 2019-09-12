@@ -77,6 +77,17 @@ body {
   font-size: 14px;
 }
 
+.container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 ul.inline li {
   display: inline-block;
   margin: 0 6px;
