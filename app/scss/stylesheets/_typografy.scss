@@ -1,21 +1,33 @@
 @font-face{
-  font-family: "Exo2-Regular";
+  font-family: "Amsdam-Regular";
   font-weight: 400;
-  src: url("../../fonts/Exo2-Regular.ttf");
+  src: url("../fonts/Amsdam Regular.ttf");
 }
 @font-face{
-  font-family: "Exo2-Medium";
-  font-weight: 500;
-  src: url("../../fonts/Exo2-Medium.ttf");
+  font-family: "Crimson-Regular";
+  font-weight: 400;
+  src: url("../fonts/Crimson Text regular.ttf");
 }
 @font-face{
-  font-family: "Exo2-Black";
-  font-weight: 900;
-  src: url("../../fonts/Exo2-Black.ttf");
+  font-family: "Crimson-Italic";
+  font-weight: 400;
+  src: url("../fonts/Crimson Text italic.ttf");
 }
+@font-face{
+  font-family: "Crimson-Roman";
+  font-weight: 400;
+  src: url("../fonts/crimsontext.ttf");
+}
+@font-face{
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  src: url("../fonts/Montserrat regular.ttf");
+}
+
+
 
 html,
 body{
-  @include exo2-regular;
-  font-size: 14px;
+  @include crimson-roman;
+  font-size: 13px;
 }

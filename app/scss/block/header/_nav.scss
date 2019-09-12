@@ -1,0 +1,27 @@
+.main-nav {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 65px;
+  &__logo {
+    height: 100%;
+    @include montserrat-regular;
+
+    &-img {
+
+    }
+  }
+
+  &__menu {
+
+    &-item {
+
+    }
+
+    &-link {
+
+    }
+  }
+}
