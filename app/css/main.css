@@ -481,6 +481,23 @@ body {
 }
 
 .services-section__body .services-card {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-flex-basis: 180px;
       -ms-flex-preferred-size: 180px;
           flex-basis: 180px;
@@ -490,7 +507,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   border: 2px solid #898989;
-  height: 377px;
+  height: 326px;
   padding: 0 35px 42px 35px;
   margin-right: 15px;
 }
@@ -506,4 +523,63 @@ body {
 
 .services-section__body .services-card:nth-child(4n + 2) {
   margin-left: 15px;
+}
+
+.services-section__body .services-card__header {
+  display: inherit;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services-section__body .services-card__header-icon {
+  position: relative;
+  top: -11px;
+  width: 60px;
+  display: inherit;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.services-section__body .services-card__header-icon::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 60px;
+  height: 40px;
+}
+
+.services-section__body .services-card__header-icon .icon__design {
+  display: inline-block;
+  width: 26px;
+  height: 25px;
+  background: url("../img/services/icon-idea.png");
+}
+
+.services-section__body .services-card__header-name {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #d8d8d8;
+}
+
+.services-section__body .services-card__body-desription {
+  text-align: center;
+  font-family: 'Crimson-Roman', sans-serif;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 550;
+  color: #d8d8d8;
 }
