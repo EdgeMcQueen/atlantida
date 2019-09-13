@@ -6,20 +6,15 @@
 
 &-link {
 
-  &--divider {
+    &--divider {
 
-      &::before {
-        content: '|';
-      }
+        &::before {
+          content: '|';
+        }
 
-      &::after {
-        content: '|';
-      }
-  }
-}
-
-&-icon {
-
-}
-
-  }
+        &::after {
+          content: '|';
+        }
+    }
+  } // end link
+} // social

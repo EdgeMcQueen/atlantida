@@ -7,25 +7,75 @@
   &__slider {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100px;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
     height: 320px;
+    margin-top: 180px;
+    text-align: center;
   }
-}
+} // end header-hero
+
+.slider-box {
+  max-width: 520px;
+  align-self: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 7em;
+
+  &__sup-headline {
+    font-size: 14px;
+  }
+
+  &__headline {
+    text-transform: uppercase;
+    font-size: 35px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+
+  &__button {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    width: 155px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-transform: capitalize;
+
+    &::after {
+      content: url(../img/slider/Arrow.png);
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+  } // end button
+} // end slider-box
 
 .heroSlide {
   display: none;
 }
 
 .slider__swich {
+  position: absolute;
+  top: 50%;
+  margin-top: -17.5px;
+  display: block;
   width: 35px;
   height: 35px;
+  background: #ffffff;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
+  outline: none;
 
   &--left {
 
   }
 
   &--right {
+    right: 0;
   }
-}
+} // end slider__swich
