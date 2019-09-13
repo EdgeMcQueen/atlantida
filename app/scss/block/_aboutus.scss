@@ -1,0 +1,121 @@
+.aboutus{
+
+	&-section{
+		padding: 72px 0 60px 0;
+		background: $bg-grey;
+	}
+
+	&-card{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+			&__header{
+				display: flex;
+				&--img{
+					max-width: 100%;
+					width: 100%;
+					height: auto;
+					object-fit: contain;
+				}
+			}
+
+			&__body{
+				@include amsdam-regular;
+				padding: 60px 70px 50px 70px;
+				background: $bg-white;
+
+					&-title{
+						text-transform: uppercase;
+						font-size: 20px;
+						font-weight: 400;
+						text-align: center;
+						color: $content-main;
+					}
+
+					&-ceotxt{
+						margin: 42px 0 32px 0;
+						@include crimson-roman;
+						font:{
+							size: 14px;
+							weight: 550;
+						}
+						color: $content-main;
+					}
+
+					&-ul{
+						margin-top: 16px;
+						display: flex;
+						justify-content: center;
+						@include montserrat-regular;
+					}
+
+					&-link{
+						padding: 14px 26px;
+						margin-right: 4px;
+						font:{
+							size: 13px;
+							weight: 600;
+						}
+						color: $content-main;
+						background: transparent;
+						border: 2px solid $content-main;
+						@include transition($easeIn-1s, background, color);
+						&:last-child{
+							margin-right: 0;
+						}
+						&:hover{
+							@include transition($easeOut-2s, background, color);
+							background: $content-main;
+							color: $h-col;
+						}
+					}
+			}
+	} // end -card
+
+	&-aboutwork{
+		display: flex;
+		flex-wrap: wrap;
+		// justify-content: center;
+		margin-top: 36px;
+
+		&__work-item{
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			flex: 0 0 24.8888%;
+			max-width: 24.8888%;
+				&:nth-child(1){
+					border-right: 1px solid $bb-col;
+				}
+				&:nth-child(2){
+					border-right: 1px solid $bb-col;
+				}
+				&:nth-child(3){
+					border-right: 1px solid $bb-col;
+				}
+
+			.work-item{
+				&__info{
+					@include montserrat-regular;
+					font:{
+						size: 13px;
+						weight: 550;
+					}
+					margin: 22px 0 28px;
+					color: $content-main;
+				}
+
+				&__count{
+					@include montserrat-regular;
+					font:{
+						size: 45px;
+						weight: 600;
+					}
+					color: $content-main;
+				}
+			}
+		}
+	}
+}

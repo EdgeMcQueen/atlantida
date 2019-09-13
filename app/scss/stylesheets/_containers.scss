@@ -1,6 +1,7 @@
 // Контейнеры
 .container {
   display: flex;
+  flex-direction: column;
   max-width: 1170px;
   width: 100%;
   height: auto;
