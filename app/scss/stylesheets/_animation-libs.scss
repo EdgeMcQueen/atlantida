@@ -20,6 +20,8 @@ $easeInOut-1s: 0.1s ease-in-out;
 $easeInOut-2s: 0.2s ease-in-out;
 $easeInOut-3s: 0.3s ease-in-out;
 
+
+// миксин для вызова транзишинов
 @mixin transition ($ease, $properties...) {
   transition: $ease;
   @if length($properties) > 0 {

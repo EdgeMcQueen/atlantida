@@ -1,0 +1,75 @@
+.services{
+
+	&-section{
+		padding: 68px 0 83px;
+		background: url('../img/services/background.png') no-repeat;
+
+		&__header{
+			&--title{
+				@include amsdam-regular;
+				text-transform: uppercase;
+				font-size: 20px;
+				font-weight: 400;
+				text-align: center;
+				color: $bg-white;
+			}
+
+			&--subtitle{
+				margin: 42px 0 75px 0;
+				@include crimson-roman;
+				font:{
+					size: 14px;
+					weight: 550;
+				}
+				text-align: center;
+				color: $ss-col;
+			}
+		}
+
+		&__body{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-flow: row wrap;
+			box-sizing: border-box;
+
+			.services-card{
+				flex-basis: 180px;
+				max-width: 100%;
+				flex-grow: 1;
+				border: 2px solid $bb-s-color;
+				height: 377px;
+				padding: 0 35px 42px 35px;
+				margin-right: 15px;
+				&:last-child{
+					margin-right: 0;
+					margin-left: 15px;
+				}
+				&:nth-child(3){
+					margin-left: 15px;
+				}
+				&:nth-child(4n + 2){
+					margin-left: 15px;
+				}
+
+				&__header{
+
+					&-icon{
+
+					}
+
+					&-name{
+
+					}
+				}
+
+				&__body{
+
+					&-description{
+
+					}
+				}
+			}
+		}
+	}
+}
