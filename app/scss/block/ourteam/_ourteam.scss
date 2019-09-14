@@ -1,0 +1,90 @@
+.ourteam {
+  width: 100%;
+  height: 660px;
+  background-image: url(../img/ourTeam/Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: $font-dark;
+
+  .container {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+
+    &-headline {
+      @include amsdam-regular;
+      text-transform: uppercase;
+    }
+
+    &-title {
+      @include crimson-regular;
+      font-size: 14px;
+    }
+  } // end ourteam__header
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-self: center;
+    width: 885px;
+    height: 350px;
+
+    &__card {
+      width: 271px;
+      height: 340px;
+      position: relative;
+
+      &-content {
+        position: absolute;
+        top: 9px;
+        left: 7.5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 256px;
+        height: 320px;
+        background-color: #ffffff;
+        opacity: 0;
+        transition: $easeIn-1s;
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &-box {
+          margin-bottom: 35px;
+          margin-left: 20px;
+          line-height: 1.5;
+
+          &-name {
+            @include montserrat-regular;
+            font-size: 13px;
+          }
+
+          &-vocation {
+            @include crimson-italic;
+            font-size: 14px;
+          }
+
+          &-divider {
+            box-sizing: border-box;
+            height: 15px;
+            width: 150px;
+            padding-top: 9px;
+          }
+        }
+      } // end ourteam__content__card-content
+    }
+  }
+}
