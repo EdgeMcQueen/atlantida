@@ -490,10 +490,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -506,10 +502,28 @@ body {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border: 2px solid #898989;
-  height: 326px;
+  border-left: 2px solid #898989;
+  border-right: 2px solid #898989;
+  border-bottom: 2px solid #898989;
   padding: 0 35px 42px 35px;
   margin-right: 15px;
+  position: relative;
+}
+
+.services-section__body .services-card::before, .services-section__body .services-card::after {
+  content: '';
+  position: absolute;
+  width: 102px;
+  height: 2px;
+  background: #898989;
+}
+
+.services-section__body .services-card::before {
+  left: 0;
+}
+
+.services-section__body .services-card::after {
+  right: 0;
 }
 
 .services-section__body .services-card:last-child {
@@ -553,7 +567,7 @@ body {
 .services-section__body .services-card__header-icon::before {
   content: '';
   position: absolute;
-  top: -10px;
+  top: -8px;
   width: 60px;
   height: 40px;
 }
@@ -562,7 +576,40 @@ body {
   display: inline-block;
   width: 26px;
   height: 25px;
+  position: relative;
+  top: 2px;
+  left: 2.5%;
   background: url("../img/services/icon-idea.png");
+}
+
+.services-section__body .services-card__header-icon .icon__webdesign {
+  display: inline-block;
+  width: 27px;
+  height: 21px;
+  position: relative;
+  top: 2px;
+  left: 2.5%;
+  background: url("../img/services/icon-display.png");
+}
+
+.services-section__body .services-card__header-icon .icon__seoanalyt {
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  position: relative;
+  top: 2px;
+  left: 2.5%;
+  background: url("../img/services/icon-trade.png");
+}
+
+.services-section__body .services-card__header-icon .icon__wordpress {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  position: relative;
+  top: 2px;
+  left: 2.5%;
+  background: url("../img/services/icon-wordpress.png");
 }
 
 .services-section__body .services-card__header-name {
@@ -573,6 +620,10 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   color: #d8d8d8;
+}
+
+.services-section__body .services-card__body {
+  margin-top: 30px;
 }
 
 .services-section__body .services-card__body-desription {
