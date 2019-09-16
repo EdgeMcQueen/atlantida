@@ -26,5 +26,7 @@ $easeInOut-3s: 0.3s ease-in-out;
   transition: $ease;
   @if length($properties) > 0 {
     transition-property: $properties;
+  } @else if length($properties) == 0 {
+  	transition: $ease;
   }
 }

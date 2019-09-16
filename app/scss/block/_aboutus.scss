@@ -65,7 +65,7 @@
 							margin-right: 0;
 						}
 						&:hover{
-							@include transition($easeOut-2s, background, color);
+							@include transition($easeOut-3s, background, color);
 							background: $content-main;
 							color: $h-col;
 						}

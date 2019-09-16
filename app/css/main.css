@@ -365,9 +365,9 @@ body {
 }
 
 .aboutus-card__body-link:hover {
-  -webkit-transition: 0.2s ease-out;
-  -o-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
   -webkit-transition-property: background, color;
   -o-transition-property: background, color;
   transition-property: background, color;
