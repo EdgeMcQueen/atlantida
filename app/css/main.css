@@ -634,3 +634,199 @@ body {
   font-weight: 550;
   color: #d8d8d8;
 }
+
+.history-section {
+  padding: 55px 0 82px;
+  background: #ededed;
+}
+
+.history .col-6 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.history .col-6:nth-child(1) {
+  padding-left: 0;
+}
+
+.history .col-6:nth-child(2) {
+  padding-right: 0;
+}
+
+.history .col-6:nth-child(3) {
+  padding-left: 0;
+}
+
+.history .col-6:nth-child(4) {
+  padding-right: 0;
+}
+
+.history .timeline-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.history .timeline-row::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  z-index: 5;
+  background: #3e3d3d;
+}
+
+.history .timeline-row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.history .timeline .block-1 {
+  top: 4px;
+}
+
+.history .timeline .block-2 {
+  top: 46px;
+}
+
+.history .timeline .block-3 {
+  top: 30px;
+}
+
+.history .timeline .block-4 {
+  top: 72px;
+}
+
+.history .timeline-block .timeline-block__icon-1, .history .timeline-block .timeline-block__icon-2, .history .timeline-block .timeline-block__icon-3, .history .timeline-block .timeline-block__icon-4 {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: inline-block;
+  background: #3e3d3d;
+}
+
+.history .timeline-block__icon-1 {
+  top: 16px;
+  right: -1.8%;
+}
+
+.history .timeline-block__icon-2 {
+  top: 8.5%;
+  left: -1.1%;
+}
+
+.history .timeline-block__icon-3 {
+  top: 8.5%;
+  right: -1.7%;
+}
+
+.history .timeline-block__icon-4 {
+  top: 6.2%;
+  left: -1.2%;
+}
+
+.history .timeline-block__content {
+  line-height: 1.5em;
+  border: 2px solid #3e3d3d;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+}
+
+.history .timeline-block__content-right {
+  position: relative;
+  padding-top: 26px;
+  padding-left: 56px;
+  padding-right: 21px;
+  padding-bottom: 32px;
+}
+
+.history .timeline-block__content-right::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #3e3d3d;
+}
+
+.history .timeline-block__content-left {
+  position: relative;
+  padding-top: 26px;
+  padding-left: 21px;
+  padding-right: 56px;
+  padding-bottom: 32px;
+}
+
+.history .timeline-block__content-left::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  left: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-left: 7px solid #3e3d3d;
+}
+
+.history .timeline-block__content--title, .history .timeline-block__content--date {
+  font-family: 'Montserrat-Regular', sans-serif;
+  color: #3e3d3d;
+}
+
+.history .timeline-block__content--title {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.history .timeline-block__content--date {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.history .timeline-block__content--descript {
+  margin-top: 28px;
+  font-size: 1.3em;
+  color: #3e3d3d;
+}
+
+.history .timeline-block__content:hover {
+  background: #3e3d3d;
+  -webkit-transition: 0.1s ease;
+  -o-transition: 0.1s ease;
+  transition: 0.1s ease;
+  -webkit-transition-property: color, background;
+  -o-transition-property: color, background;
+  transition-property: color, background;
+}
+
+.history .timeline-block__content:hover .timeline-block__content--title,
+.history .timeline-block__content:hover .timeline-block__content--date,
+.history .timeline-block__content:hover .timeline-block__content--descript {
+  color: #d3d3d3;
+}
