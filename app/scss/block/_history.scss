@@ -39,6 +39,7 @@
 	.timeline{
 
 		&-row{
+			padding-top: 44px;
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
@@ -60,6 +61,25 @@
 			}
 		}
 
+		&-cyrcle{
+			position: relative;
+			left: 46.8%;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 73px;
+			height: 73px;
+			border-radius: 50%;
+			border: 2px solid $content-main;
+				&__count{
+					font:{
+						size: 1.2em;
+						weight: 600;
+					}
+					color: $content-main;
+				}
+		}
+
 		.block{
 			&-1{
 				top: 4px;
@@ -77,6 +97,7 @@
 				top: 72px;
 			}
 		}
+
 		&-block{
 			%icon{
 				position: absolute;
