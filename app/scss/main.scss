@@ -33,12 +33,8 @@
 
 // Основные файлы
 @import "block/_social.scss";
-@import "block/header/_header.scss";
-@import "block/header/_nav.scss";
-@import "block/header/_hero.scss";
-@import "block/services/_services.scss";
-@import "block/ourteam/_ourteam.scss";
-
-@import "block/_aboutus.scss";
-@import "block/_services.scss";
-@import "block/_history.scss";
+@import "block/index/_header.scss";
+@import "block/index/_aboutUs.scss";
+@import "block/index/_services.scss";
+@import "block/index/_history.scss";
+@import "block/index/_ourTeam.scss";

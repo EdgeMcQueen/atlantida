@@ -1,7 +1,3 @@
-/*
- ! d - dark
- ! l - light
-*/
 * {
   padding: 0;
   margin: 0;
@@ -124,6 +120,17 @@ body {
   overflow: hidden;
 }
 
+.divider {
+  margin-top: -20px;
+  display: inline-block;
+  font-size: 25px;
+  letter-spacing: -4.5px;
+  color: #3e3d3d;
+  -webkit-transform: scale(1, 2);
+      -ms-transform: scale(1, 2);
+          transform: scale(1, 2);
+}
+
 .icon__awards {
   display: inline-block;
   width: 38px;
@@ -150,17 +157,6 @@ body {
   width: 41px;
   height: 37px;
   background: url("../img/about us/icon-briefcase.png");
-}
-
-.divider {
-  margin-top: -20px;
-  display: inline-block;
-  font-size: 25px;
-  letter-spacing: -4.5px;
-  color: #3e3d3d;
-  -webkit-transform: scale(1, 2);
-      -ms-transform: scale(1, 2);
-          transform: scale(1, 2);
 }
 
 .social {
@@ -322,8 +318,8 @@ body {
 .slider-box__headline {
   text-transform: uppercase;
   font-size: 35px;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 .slider-box__button {
@@ -367,141 +363,6 @@ body {
 
 .slider__swich--right {
   right: 0;
-}
-
-.ourteam {
-  width: 100%;
-  height: 660px;
-  background-image: url(../img/ourTeam/Image.png);
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  color: #3e3d3d;
-}
-
-.ourteam .container {
-  height: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
-.ourteam__header {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 150px;
-  text-align: center;
-}
-
-.ourteam__header-headline {
-  font-family: 'Amsdam-Regular', sans-serif;
-  text-transform: uppercase;
-}
-
-.ourteam__header-title {
-  font-family: 'Crimson-Regular', sans-serif;
-  font-size: 14px;
-}
-
-.ourteam__content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
-  width: 885px;
-  height: 350px;
-}
-
-.ourteam__content__card {
-  width: 271px;
-  height: 340px;
-  position: relative;
-}
-
-.ourteam__content__card-content {
-  position: absolute;
-  top: 9px;
-  left: 7.5px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 256px;
-  height: 320px;
-  background-color: #ffffff;
-  opacity: 0;
-  -webkit-transition: all 0.1s ease-in;
-  -o-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-}
-
-.ourteam__content__card-content:hover {
-  opacity: 0.8;
-}
-
-.ourteam__content__card-content-box {
-  margin-bottom: 35px;
-  margin-left: 20px;
-  line-height: 1.5;
-}
-
-.ourteam__content__card-content-box-name {
-  font-family: 'Montserrat-Regular', sans-serif;
-  font-size: 13px;
-}
-
-.ourteam__content__card-content-box-vocation {
-  font-family: 'Crimson-Italic', sans-serif;
-  font-size: 14px;
-}
-
-.ourteam__content__card-content-box-divider {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 15px;
-  width: 150px;
-  padding-top: 9px;
 }
 
 .aboutus-section {
@@ -600,7 +461,7 @@ body {
   -o-transition-property: background, color;
   transition-property: background, color;
   background: #3e3d3d;
-  color: #cecece;
+  color: #ffffff;
 }
 
 .aboutus-aboutwork {
@@ -865,7 +726,7 @@ body {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
-  color: #d8d8d8;
+  color: #ffffff;
 }
 
 .services-section__body .services-card__body {
@@ -878,7 +739,7 @@ body {
   line-height: 16px;
   font-size: 14px;
   font-weight: 550;
-  color: #d8d8d8;
+  color: #ffffff;
 }
 
 .history-section {
@@ -1012,6 +873,19 @@ body {
   height: 54px;
   left: 47.6666%;
   background: #3e3d3d;
+  -webkit-transition: 0.2s ease-out;
+  -o-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.history .timeline-cyrcle__dark:hover {
+  background: #555557;
+}
+
+.history .timeline-cyrcle__link {
+  position: absolute;
+  width: 25px;
+  height: 25px;
 }
 
 .history .timeline-cyrcle__icon {
@@ -1321,4 +1195,139 @@ body {
   .history .timeline-cyrcle {
     display: none;
   }
+}
+
+.ourteam {
+  width: 100%;
+  height: 660px;
+  background-image: url(../img/ourTeam/Image.png);
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color: #3e3d3d;
+}
+
+.ourteam .container {
+  height: inherit;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+
+.ourteam__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+}
+
+.ourteam__header-headline {
+  font-family: 'Amsdam-Regular', sans-serif;
+  text-transform: uppercase;
+}
+
+.ourteam__header-title {
+  font-family: 'Crimson-Regular', sans-serif;
+  font-size: 14px;
+}
+
+.ourteam__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: 885px;
+  height: 350px;
+}
+
+.ourteam__content__card {
+  width: 271px;
+  height: 340px;
+  position: relative;
+}
+
+.ourteam__content__card-content {
+  position: absolute;
+  top: 9px;
+  left: 7.5px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 256px;
+  height: 320px;
+  background-color: #ffffff;
+  opacity: 0;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.ourteam__content__card-content:hover {
+  opacity: 0.8;
+}
+
+.ourteam__content__card-content-box {
+  margin-bottom: 35px;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+.ourteam__content__card-content-box-name {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 13px;
+}
+
+.ourteam__content__card-content-box-vocation {
+  font-family: 'Crimson-Italic', sans-serif;
+  font-size: 14px;
+}
+
+.ourteam__content__card-content-box-divider {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 15px;
+  width: 150px;
+  padding-top: 9px;
 }

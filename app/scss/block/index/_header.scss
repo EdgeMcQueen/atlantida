@@ -1,0 +1,163 @@
+.header {
+  background: $bg-light;
+  @include montserrat-regular;
+  color: $font-dark;
+
+  &-hero {
+    background-image: url("../img/slider/Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}
+
+// main-nav
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  // line-height: 65px;
+
+  &__logo {
+    flex: 0 0 20%;
+    display: inline-flex;
+    align-items: center;
+    max-width: 20%;
+    font-size: 18px;
+    font-weight: 600;
+    // vertical-align: middle;
+
+    &:visited {
+      color: $main-logo-grey;
+    }
+
+    &-img {
+      margin-right: 11px;
+      vertical-align: inherit;
+    }
+  }
+  // end logo
+
+  &__menu {
+    display: inline-flex;
+    // justify-content: space-between;
+    // width: 580px;
+    // height: 12px;
+    flex: 0 0 60%;
+    max-width: 60%;
+    color: $main-link-color;
+
+
+    &-item {
+      margin-right: 16px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+    }
+
+    &-link {
+      font-size: 14px;
+      font-weight: 550;
+      text-transform: uppercase;
+      color: $main-link-color;
+
+      &:hover {
+        color: $main-link-hover;
+      }
+
+      // &:visited {
+      //   color: $font-dark;
+      // }
+    }
+  }
+  // end menu
+}
+// end nav
+
+
+// header_hero
+.header-hero {
+  width: 100%;
+  height: 635px;
+  @include amsdam-regular;
+  color: $font-light;
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 320px;
+    margin-top: 180px;
+    text-align: center;
+  }
+} // end header-hero
+
+.slider-box {
+  max-width: 520px;
+  align-self: center;
+  justify-content: space-between;
+  font-size: 15px;
+  line-height: 7em;
+
+  &__sup-headline {
+    font-size: 14px;
+  }
+
+  &__headline {
+    text-transform: uppercase;
+    font-size: 35px;
+    border-top: 2px solid $brd-light;
+    border-bottom: 2px solid $brd-light;
+  }
+
+  &__button {
+    position: relative;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    width: 155px;
+    height: 50px;
+    border: 2px solid $brd-light;
+    color: $font-light;
+    text-transform: capitalize;
+
+    &::after {
+      content: url(../img/slider/Arrow.png);
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      margin-left: -7.5px;
+    }
+  } // end button
+} // end slider-box
+
+.heroSlide {
+  display: none;
+}
+
+.slider__swich {
+  position: absolute;
+  top: 50%;
+  margin-top: -17.5px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background: $bg-light;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+
+  &--left {
+
+  }
+
+  &--right {
+    right: 0;
+  }
+} // end slider__swich

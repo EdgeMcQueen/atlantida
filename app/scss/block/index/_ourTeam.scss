@@ -55,7 +55,7 @@
         justify-content: flex-end;
         width: 256px;
         height: 320px;
-        background-color: #ffffff;
+        background-color: $bg-light;
         opacity: 0;
         transition: $easeIn-1s;
         &:hover {
@@ -83,8 +83,8 @@
             width: 150px;
             padding-top: 9px;
           }
-        }
-      } // end ourteam__content__card-content
-    }
-  }
-}
+        } // end -box
+      } // end -content
+    } // end __card
+  } // __content
+} // ourteam

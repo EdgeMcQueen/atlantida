@@ -1,45 +1,42 @@
 // atlantida general colors
 
-// $content-main: #3e3d3d;
-$content-hover: #555557;
-$font-dark: #3e3d3d;
-$font-light: #d8d8d8;
-$logo-grey: #757575;
-$menu-grey: #aaaaaa;
+// elemets color
+ // main elements
+	$main-logo-grey: #757575;
+	$main-menu-grey: #aaaaaa;
+ // border color
+	$brd-grey: #b0b0b0;
+	$brd-dark: #3e3d3d;
+	$brd-light: #ffffff;
 
+// font color
+	// text
+	$font-dark: #3e3d3d;
+	$font-lgrey: #d8d8d8;
+	$font-grey: #cecece;
+	$font-light: #ffffff;
+
+	// links
+	$main-link-color: #aaaaaa;
+	$main-link-hover: #555557;
+
+// background color
+
+$bg-light: #ffffff;
+$bg-grey: #e3e3e3;
+$bg-dark: #3e3d3d;
+
+
+// block base color
+
+// _history
 $bh-bb: #605f5f;
-
-
 $ss-col: #bfbfbf;
-
 $bb-s-color: #898989;
-
 $bs-hist: #ededed;
-
 $bh-hist: #d3d3d3;
 
-// Для текста:
-/*
- ! d - dark
- ! l - light
-*/
-
-$col-d-grey: #3e3d3d;
-$col-l-white: #cecece;
-//<----------
-
-// Для фона:
-$bg-white: #ffffff;
-$bg-grey: #e3e3e3;
-$bg-d-grey: #3e3d3d;
-
-//<----------
-$brd-l-grey: #b0b0b0;
-$brd-d-grey: #3e3d3d;
-// для бордеров:
-
-
-
+// color mixins
 
 @mixin d-grey ($type) {
 	$d-grey: #3e3d3d;
