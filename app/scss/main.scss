@@ -4,6 +4,32 @@
 // Преднастройки
 @import "stylesheets/_stylesheets.scss";
 
+// миксины:
+@mixin subtitle($f-family, $color) {
+	 &{
+			font:{
+				family: $f-family;
+				size: 14px;
+				weight: 550;
+			}
+		text-align: center;
+		color: $color;
+	}
+}
+
+@mixin title($f-family, $color) {
+	 &{
+			font:{
+				family: $f-family;
+				size: 20px;
+				weight: 400;
+			}
+		text-transform: uppercase;
+		text-align: center;
+		color: $color;
+	}
+}
+
 
 // Основные файлы
 @import "block/_social.scss";
@@ -12,3 +38,7 @@
 @import "block/header/_hero.scss";
 @import "block/services/_services.scss";
 @import "block/ourteam/_ourteam.scss";
+
+@import "block/_aboutus.scss";
+@import "block/_services.scss";
+@import "block/_history.scss";
