@@ -7,12 +7,12 @@
 		&__header{
 
 			&--title{
-				@include title($amsdam-regular, $content-main);
+				@include title($amsdam-regular, $col-d-grey);
 			}
 
 			&--subtitle{
 				margin: 40px 0 44px 0;
-				@include subtitle($crimson-roman, $content-main);
+				@include subtitle($crimson-roman, $col-d-grey);
 			}
 		}
 
@@ -70,7 +70,7 @@
 				height: 100%;
 				width: 2px;
 				z-index: 5;
-				background: $content-main;
+				background: $bg-d-grey;
 			}
 			&::after{
 				content: '';
@@ -96,12 +96,12 @@
 			width: 73px;
 			height: 73px;
 			border-radius: 50%;
-			border: 2px solid $content-main;
+			border: 2px solid $brd-d-grey;
 				&__dark{
 					width: 54px;
 					height: 54px;
 					left: 47.6666%;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 				&__icon{
 					width: 25px;
@@ -114,7 +114,7 @@
 						size: 1.2em;
 						weight: 600;
 					}
-					color: $content-main;
+					color: $col-d-grey;
 				}
 		}
 
@@ -131,7 +131,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 				top: 4px;
 			}
@@ -151,7 +151,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 			}
 
@@ -168,7 +168,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 			}
 
@@ -185,7 +185,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 			}
 
@@ -201,7 +201,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 			}
 
@@ -218,7 +218,7 @@
 					height: 17px;
 					border-radius: 50%;
 					display: inline-block;
-					background: $content-main;
+					background: $bg-d-grey;
 				}
 			}
 
@@ -228,7 +228,7 @@
 
 			&__content{
 				line-height: 1.5em;
-				border: 2px solid $content-main;
+				border: 2px solid $brd-d-grey;
 				@include transition($easeOut-2s, color, background);
 
 				&-right{
@@ -247,7 +247,7 @@
 				    height: 0;
 				    width: 0;
 				    border: 7px solid transparent;
-				    border-right: 7px solid $content-main;
+				    border-right: 7px solid $brd-d-grey;
 			    }
 				}
 				&-left{
@@ -266,14 +266,15 @@
 				    height: 0;
 				    width: 0;
 				    border: 7px solid transparent;
-				    border-left: 7px solid $content-main;
+				    border-left: 7px solid $brd-d-grey;
 			    }
 				}
 
 				&--title,
 				&--date{
 					@include montserrat-regular;
-					color: $content-main;
+					// color: $col-d-grey;
+					@include d-grey(color);
 				}
 
 				&--title{
@@ -294,10 +295,10 @@
 				&--descript{
 					margin-top: 28px;
 					font-size: 1.3em;
-					color: $content-main;
+					color: $col-d-grey;
 				}
 					&:hover{
-						background: $content-main;
+						background: $bg-d-grey;
 						@include transition($ease-1s, color, background);
 						.timeline-block__content--title,
 						.timeline-block__content--date,
@@ -352,7 +353,7 @@
 					    top: 16px;
 					    right: 100%;
 					    left: -7px;
-					    border-right: 7px solid $content-main;
+					    border-right: 7px solid $brd-d-grey;
 					    border-left: none;
 				    }
 					}

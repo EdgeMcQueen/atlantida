@@ -7,11 +7,11 @@
 // миксины:
 @mixin subtitle($f-family, $color) {
 	 &{
-		font:{
-			family: $f-family;
-			size: 14px;
-			weight: 550;
-		}
+			font:{
+				family: $f-family;
+				size: 14px;
+				weight: 550;
+			}
 		text-align: center;
 		color: $color;
 	}
@@ -19,11 +19,11 @@
 
 @mixin title($f-family, $color) {
 	 &{
-		font:{
-			family: $f-family;
-			size: 20px;
-			weight: 400;
-		}
+			font:{
+				family: $f-family;
+				size: 20px;
+				weight: 400;
+			}
 		text-transform: uppercase;
 		text-align: center;
 		color: $color;

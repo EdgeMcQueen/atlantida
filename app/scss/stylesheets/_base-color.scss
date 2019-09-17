@@ -1,6 +1,6 @@
 // atlantida general colors
-$bg-white: #ffffff;
-$content-main: #3e3d3d;
+
+// $content-main: #3e3d3d;
 $content-hover: #555557;
 $font-dark: #3e3d3d;
 $font-light: #d8d8d8;
@@ -8,11 +8,7 @@ $logo-grey: #757575;
 $menu-grey: #aaaaaa;
 
 $bh-bb: #605f5f;
-$bg-grey: #e3e3e3;
 
-$h-col: #cecece;
-
-$bb-col: #b0b0b0;
 
 $ss-col: #bfbfbf;
 
@@ -21,3 +17,36 @@ $bb-s-color: #898989;
 $bs-hist: #ededed;
 
 $bh-hist: #d3d3d3;
+
+// Для текста:
+/*
+ ! d - dark
+ ! l - light
+*/
+
+$col-d-grey: #3e3d3d;
+$col-l-white: #cecece;
+//<----------
+
+// Для фона:
+$bg-white: #ffffff;
+$bg-grey: #e3e3e3;
+$bg-d-grey: #3e3d3d;
+
+//<----------
+
+// для бордеров:
+
+$brd-l-grey: #b0b0b0;
+$brd-d-grey: #3e3d3d;
+
+
+@mixin d-grey ($type) {
+	$d-grey: #3e3d3d;
+
+	@if $type == bg {
+		background: $d-grey;
+	} @else if $type == color {
+			color: $d-grey;
+	}
+}

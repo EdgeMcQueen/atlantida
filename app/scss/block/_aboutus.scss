@@ -30,7 +30,7 @@
 						font-size: 20px;
 						font-weight: 400;
 						text-align: center;
-						color: $content-main;
+						color: $col-d-grey;
 					}
 
 					&-ceotxt{
@@ -40,7 +40,7 @@
 							size: 14px;
 							weight: 550;
 						}
-						color: $content-main;
+						color: $col-d-grey;
 					}
 
 					&-ul{
@@ -57,17 +57,17 @@
 							size: 13px;
 							weight: 600;
 						}
-						color: $content-main;
+						color: $col-d-grey;
 						background: transparent;
-						border: 2px solid $content-main;
+						border: 2px solid $brd-d-grey;
 						@include transition($easeIn-1s, background, color);
 						&:last-child{
 							margin-right: 0;
 						}
 						&:hover{
 							@include transition($easeOut-3s, background, color);
-							background: $content-main;
-							color: $h-col;
+							background: $bg-d-grey;
+							color: $col-l-white;
 						}
 					}
 			}
@@ -92,13 +92,13 @@
 			// width: percentage(0.24); // функция из sass расчитывает проценты 0.24 = 24%
 			flex-grow: 1;
 				&:nth-child(1){
-					border-right: 1px solid $bb-col;
+					border-right: 1px solid $brd-l-grey;
 				}
 				&:nth-child(2){
-					border-right: 1px solid $bb-col;
+					border-right: 1px solid $brd-l-grey;
 				}
 				&:nth-child(3){
-					border-right: 1px solid $bb-col;
+					border-right: 1px solid $brd-l-grey;
 				}
 
 			.work-item{
@@ -109,7 +109,7 @@
 						weight: 550;
 					}
 					margin: 22px 0 28px;
-					color: $content-main;
+					color: $col-d-grey;
 				}
 
 				&__count{
@@ -118,7 +118,7 @@
 						size: 45px;
 						weight: 600;
 					}
-					color: $content-main;
+					color: $col-d-grey;
 				}
 			}
 		}
