@@ -5,24 +5,14 @@
 		background: url('../img/services/background.png') no-repeat;
 
 		&__header{
+
 			&--title{
-				@include amsdam-regular;
-				text-transform: uppercase;
-				font-size: 20px;
-				font-weight: 400;
-				text-align: center;
-				color: $bg-white;
+				@include title($amsdam-regular, $bg-white);
 			}
 
 			&--subtitle{
-				margin: 42px 0 75px 0;
-				@include crimson-roman;
-				font:{
-					size: 14px;
-					weight: 550;
-				}
-				text-align: center;
-				color: $ss-col;
+				margin: 40px 0 44px 0;
+				@include subtitle($crimson-roman, $ss-col);
 			}
 		}
 

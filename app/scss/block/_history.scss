@@ -3,11 +3,28 @@
 	&-section{
 		padding: 55px 0 82px;
 		background: $bs-hist;
+
+		&__header{
+
+			&--title{
+				@include title($amsdam-regular, $content-main);
+			}
+
+			&--subtitle{
+				margin: 40px 0 44px 0;
+				@include subtitle($crimson-roman, $content-main);
+			}
+		}
+
+		&__body{
+			// margin-top: 44px;
+		}
 	}
 
 	.col-6{
 		flex: 0 0 50%;
-		max-width: 50%;
+		flex-basis: 400px;
+		flex-grow: 1;
 		box-sizing: border-box;
 		position: relative;
 		padding:{
@@ -42,6 +59,7 @@
 			padding-top: 44px;
 			display: flex;
 			flex-wrap: wrap;
+			flex-direction: row;
 			width: 100%;
 			position: relative;
 			&::before{
@@ -59,6 +77,14 @@
 				display: table;
 				clear: both;
 			}
+
+			&__bottom{
+				padding-bottom: 160px;
+			}
+
+			&__end{
+				padding-bottom: 68px;
+			}
 		}
 
 		&-cyrcle{
@@ -71,6 +97,18 @@
 			height: 73px;
 			border-radius: 50%;
 			border: 2px solid $content-main;
+				&__dark{
+					width: 54px;
+					height: 54px;
+					left: 47.6666%;
+					background: $content-main;
+				}
+				&__icon{
+					width: 25px;
+					height: 23px;
+					display: inline-block;
+					background: url('../img/history/icon-start.png') no-repeat;
+				}
 				&__count{
 					font:{
 						size: 1.2em;
@@ -82,54 +120,111 @@
 
 		.block{
 			&-1{
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 16px;
+					right: -1.8%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
 				top: 4px;
 			}
 
 			&-2{
 				top: 46px;
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 7.5%;
+					left: -1.1%;
+					top: 16px;
+					right: -1.8%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
 			}
 
 			&-3{
 				top: 30px;
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 5.5%;
+					right: -1.7%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
 			}
 
 			&-4{
 				top: 72px;
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 5.8%;
+					left: -1.2%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
 			}
+
+			&-5{
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 7.8%;
+					right: -1.7%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
+			}
+
+			&-6{
+				top: 48px;
+				position: relative;
+				&::after{
+					content: '';
+					display: inline-block;
+					position: absolute;
+					top: 7.8%;
+					left: -1.2%;
+					width: 17px;
+					height: 17px;
+					border-radius: 50%;
+					display: inline-block;
+					background: $content-main;
+				}
+			}
+
 		}
 
 		&-block{
-			%icon{
-				position: absolute;
-				width: 17px;
-				height: 17px;
-				border-radius: 50%;
-				display: inline-block;
-				background: $content-main;
-			}
-			&__icon-1{
-				@extend %icon;
-				top: 16px;
-				right: -1.8%;
-			}
-
-			&__icon-2{
-				@extend %icon;
-				top: 7.5%;
-				left: -1.1%;
-			}
-
-			&__icon-3{
-				@extend %icon;
-				top: 5.5%;
-				right: -1.7%;
-			}
-
-			&__icon-4{
-				@extend %icon;
-				top: 5.8%;
-				left: -1.2%;
-			}
 
 			&__content{
 				line-height: 1.5em;

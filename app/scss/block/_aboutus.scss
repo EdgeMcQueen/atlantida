@@ -74,18 +74,23 @@
 	} // end -card
 
 	&-aboutwork{
+		width: 100%;
+		box-sizing: border-box;
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
-		// justify-content: center;
+		align-items: stretch;
+		justify-content: flex-start;
 		margin-top: 36px;
 
 		&__work-item{
-			display: inline-flex;
+			display: flex;
 			flex-direction: column;
 			align-items: center;
-			justify-content: center;
-			flex: 0 0 24.8888%;
-			max-width: 24.8888%;
+			width: 24.8888%;
+			flex-basis: 270px;
+			// width: percentage(0.24); // функция из sass расчитывает проценты 0.24 = 24%
+			flex-grow: 1;
 				&:nth-child(1){
 					border-right: 1px solid $bb-col;
 				}
