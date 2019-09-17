@@ -19,7 +19,7 @@
 		&__body{
 			// margin-top: 44px;
 		}
-	}
+	} // section
 
 	.col-6{
 		flex: 0 0 50%;
@@ -308,6 +308,153 @@
 					}
 			} //-end .timeline-block__content
 
+		}
+
+		@media screen and (max-width: 768px) {
+			&-row{
+				&::before{
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					height: 100%;
+				}
+			}
+
+			&-block{
+
+				&__content{
+					&-right{
+						position: relative;
+						padding:{
+							top: 26px;
+							left: 56px;
+							right: 21px;
+							bottom: 32px;
+						}
+						&::before{
+					    content: '';
+					    top: 16px;
+					    right: 100%;
+				    }
+					}
+					&-left{
+						position: relative;
+						padding:{
+							top: 26px;
+							left: 21px;
+							right: 56px;
+							bottom: 32px;
+						}
+						&::before{
+					    content: '';
+					    top: 16px;
+					    right: 100%;
+					    left: -7px;
+					    border-right: 7px solid $content-main;
+					    border-left: none;
+				    }
+					}
+				}
+			} //-end -block
+
+			.block{
+					&-3{
+						top: 60px;
+					}
+				}
+			.block{
+				&-1,
+				&-3,
+				&-5{
+					&::after{
+						left: -1.1%;
+					}
+				}
+
+				&-1,
+				&-2,
+				&-3,
+				&-4,
+				&-5,
+				&-6{
+					top: 0;
+					margin-bottom: 20px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 425px) {
+			.block{
+				&-4{
+					&::after{
+						top: 4.2%;
+						left: -1.9%;
+					}
+				}
+
+				&-5{
+					&::after{
+						top: 5.8%;
+						left: -1.9%;
+					}
+				}
+
+				&-6{
+					&::after{
+						top: 6.8%;
+						left: -1.9%;
+					}
+				}
+			}
+		}
+
+	} //-end timeline
+
+	@media screen and (max-width: 768px) {
+
+		.col-6{
+			&:nth-child(1){
+				padding:{
+					left: 22px;
+					right: 0;
+				}
+			}
+			&:nth-child(2){
+				padding:{
+					right: 0;
+				}
+			}
+			&:nth-child(3){
+				padding:{
+					left: 22px;
+					right: 0;
+				}
+			}
+			&:nth-child(4){
+				padding:{
+					left: 22px;
+					right: 0;
+				}
+			}
+		}
+		.timeline{
+			&-row{
+				padding:{
+					top: 0;
+					bottom: 0;
+				}
+				&__bottom{
+					padding-bottom: 20px;
+				}
+			}
+			&-cyrcle{
+				display: none;
+			}
 		}
 	}
 

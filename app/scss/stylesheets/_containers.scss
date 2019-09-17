@@ -8,4 +8,10 @@
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  box-sizing: border-box;
+
+  &__wrapper{
+  	position: relative;
+  	overflow: hidden;
+  }
 }
