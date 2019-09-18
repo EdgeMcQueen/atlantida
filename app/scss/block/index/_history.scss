@@ -322,6 +322,10 @@
 
 		@media screen and (max-width: 768px) {
 			&-row{
+				padding:{
+					top: 0;
+					bottom: 0;
+				}
 				&::before{
 					content: '';
 					position: absolute;
@@ -330,6 +334,14 @@
 					left: 0;
 					height: 100%;
 				}
+
+				&__bottom{
+					padding-bottom: 20px;
+				}
+			}
+
+			&-cyrcle{
+				display: none;
 			}
 
 			&-block{
@@ -400,6 +412,86 @@
 
 		@media screen and (max-width: 425px) {
 			.block{
+				&-1{
+					&::after{
+						left: -2%;
+					}
+				}
+
+				&-2{
+					&::after{
+						left: -2%;
+					}
+				}
+
+				&-3{
+					&::after{
+						left: -2%;
+					}
+				}
+
+				&-4{
+					&::after{
+						top: 4.2%;
+						left: -2%;
+					}
+				}
+
+				&-5{
+					&::after{
+						top: 5.8%;
+						left: -2%;
+					}
+				}
+
+				&-6{
+					&::after{
+						top: 6.8%;
+						left: -2%;
+					}
+				}
+			}
+
+			&-block{
+
+				&__content{
+					&-right{
+						position: relative;
+						padding:{
+							top: 16px;
+							left: 14px;
+							right: 24px;
+							bottom: 22px;
+						}
+						&::before{
+					    content: '';
+					    top: 16px;
+					    right: 100%;
+				    }
+					}
+					&-left{
+						position: relative;
+						padding:{
+							top: 16px;
+							left: 14px;
+							right: 24px;
+							bottom: 22px;
+						}
+						&::before{
+					    content: '';
+					    top: 16px;
+					    right: 100%;
+					    left: -7px;
+					    border-right: 7px solid $brd-dark;
+					    border-left: none;
+				    }
+					}
+				}
+			} //-end -block
+		}
+
+		@media screen and (max-width: 375px) {
+			.block{
 				&-4{
 					&::after{
 						top: 4.2%;
@@ -452,18 +544,35 @@
 				}
 			}
 		}
-		.timeline{
-			&-row{
+	}
+
+	@media screen and (max-width: 425px) {
+
+		.col-6{
+			flex: 0 0 100%;
+			&:nth-child(1){
 				padding:{
-					top: 0;
-					bottom: 0;
-				}
-				&__bottom{
-					padding-bottom: 20px;
+					left: 22px;
+					right: 0;
 				}
 			}
-			&-cyrcle{
-				display: none;
+			&:nth-child(2){
+				padding:{
+					right: 0;
+					left: 22px;
+				}
+			}
+			&:nth-child(3){
+				padding:{
+					left: 22px;
+					right: 0;
+				}
+			}
+			&:nth-child(4){
+				padding:{
+					left: 22px;
+					right: 0;
+				}
 			}
 		}
 	}

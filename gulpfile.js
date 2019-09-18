@@ -107,4 +107,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', gulp.parallel('sass', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('clear', 'clean', 'css-libs', 'prebuild', 'img'));
+gulp.task('build', gulp.parallel('clear', 'clean', 'media-queries', 'css-libs', 'prebuild', 'img'));
