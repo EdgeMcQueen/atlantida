@@ -1366,13 +1366,20 @@ body {
 }
 
 .ourteam__header-headline {
-  font-family: 'Amsdam-Regular', sans-serif;
+  font-family: "Amsdam-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  color: #3e3d3d;
 }
 
 .ourteam__header-title {
-  font-family: 'Crimson-Regular', sans-serif;
+  font-family: "Crimson-Roman", sans-serif;
   font-size: 14px;
+  font-weight: 550;
+  text-align: center;
+  color: #3e3d3d;
 }
 
 .ourteam__content {
@@ -1456,8 +1463,7 @@ body {
 
 .portfolio {
   width: 100%;
-  height: 1050px;
-  background-color: #e3e3e3;
+  background-color: #ffffff;
   color: #3e3d3d;
 }
 
@@ -1498,17 +1504,47 @@ body {
 }
 
 .portfolio__header-headline {
-  font-family: 'Amsdam-Regular', sans-serif;
+  font-family: "Amsdam-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
+  color: #3e3d3d;
 }
 
 .portfolio__header-title {
-  font-family: 'Crimson-Regular', sans-serif;
+  font-family: "Crimson-Roman", sans-serif;
   font-size: 14px;
+  font-weight: 550;
+  text-align: center;
+  color: #3e3d3d;
 }
 
 .portfolio__switcher {
   text-align: center;
+}
+
+.portfolio__switcher-button {
+  display: inline-block;
+  height: 30px;
+  padding: 5px;
+  border: 2px solid #3e3d3d;
+  background-color: #ffffff;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #3e3d3d;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.portfolio__switcher-button:hover {
+  background-color: #3e3d3d;
+  color: #ffffff;
 }
 
 .portfolio__content {
@@ -1532,53 +1568,56 @@ body {
 }
 
 .portfolio__content-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   font-size: 32px;
 }
 
 .portfolio__content-item-1 {
-  background-color: pink;
+  background-image: url(../img/portfolio/1.png);
   width: 25%;
   height: 64%;
 }
 
 .portfolio__content-item-2 {
-  background-color: green;
+  background-image: url(../img/portfolio/2.png);
   width: 25%;
   height: 36%;
 }
 
 .portfolio__content-item-3 {
-  background-color: grey;
+  background-image: url(../img/portfolio/3.png);
   width: 25%;
   height: 48%;
 }
 
 .portfolio__content-item-4 {
-  background-color: blue;
+  background-image: url(../img/portfolio/4.png);
   width: 25%;
   height: 52%;
 }
 
 .portfolio__content-item-5 {
-  background-color: red;
+  background-image: url(../img/portfolio/5.png);
   width: 25%;
   height: 32%;
 }
 
 .portfolio__content-item-6 {
-  background-color: cyan;
+  background-image: url(../img/portfolio/6.png);
   width: 25%;
   height: 68%;
 }
 
 .portfolio__content-item-7 {
-  background-color: yellow;
+  background-image: url(../img/portfolio/7.png);
   width: 25%;
   height: 64%;
 }
 
 .portfolio__content-item-8 {
-  background-color: black;
+  background-image: url(../img/portfolio/8.png);
   width: 25%;
   height: 36%;
 }

@@ -23,14 +23,12 @@
     text-align: center;
 
     &-headline {
-      @include amsdam-regular;
-      text-transform: uppercase;
-    }
+      @include title($amsdam-regular, $font-dark);
+  }
 
     &-title {
-      @include crimson-regular;
-      font-size: 14px;
-    }
+      @include subtitle($crimson-roman, $font-dark);
+  }
   } // end ourteam__header
 
   &__content {

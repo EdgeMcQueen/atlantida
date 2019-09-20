@@ -1,7 +1,6 @@
 .portfolio {
     width: 100%;
-    height: 1050px;
-    background-color: $bg-grey;
+    background-color: $bg-light;
     color: $font-dark;
 
     .container {
@@ -21,19 +20,36 @@
       text-align: center;
 
       &-headline {
-        @include amsdam-regular;
-        text-transform: uppercase;
-      }
+        @include title($amsdam-regular, $font-dark);
+    }
 
       &-title {
-        @include crimson-regular;
-        font-size: 14px;
-      }
+        @include subtitle($crimson-roman, $font-dark);
+    }
     } // end portfolio__header
 
     &__switcher {
         text-align: center;
 
+        &-button {
+            display: inline-block;
+            height: 30px;
+            padding: 5px;
+            border: 2px solid $brd-dark;
+            background-color: $bg-light;
+            @include montserrat-regular;
+            font-size: 12px;
+            font-weight: 600;
+            color: $font-dark;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            transition: $easeIn-2s;
+            &:hover {
+                background-color: $bg-dark;
+                color: $font-light;
+            }
+        }
     }
 
     &__content {
@@ -47,54 +63,55 @@
       background-color: #fff;
 
       &-box {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
         font-size: 32px;
       }
 
       &-item {
 
-
         &-1{
-            background-color: pink;
+            background-image: url(../img/portfolio/1.png);
             width: 25%;
             height: 64%;
         }
         &-2{
-            background-color: green;
+            background-image: url(../img/portfolio/2.png);
             width: 25%;
             height: 36%;
         }
         &-3{
-            background-color: grey;
+            background-image: url(../img/portfolio/3.png);
             width: 25%;
             height: 48%;
         }
         &-4{
-            background-color: blue;
+            background-image: url(../img/portfolio/4.png);
             width: 25%;
             height: 52%;
         }
         &-5{
-            background-color: red;
+            background-image: url(../img/portfolio/5.png);
             width: 25%;
             height: 32%;
         }
         &-6{
-            background-color: cyan;
+            background-image: url(../img/portfolio/6.png);
             width: 25%;
             height: 68%;
         }
         &-7{
-            background-color: yellow;
+            background-image: url(../img/portfolio/7.png);
             width: 25%;
             height: 64%;
         }
         &-8{
-            background-color: black;
+            background-image: url(../img/portfolio/8.png);
             width: 25%;
             height: 36%;
         }
       }
 
     } // __content
-  } // ourteam
-          //todo: compete portfolio stylesheets
+  } // end portfolio
