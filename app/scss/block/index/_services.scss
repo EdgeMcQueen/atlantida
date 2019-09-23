@@ -130,7 +130,7 @@
 						text-align: center;
 						@include montserrat-regular;
 						font:{
-							size: 13px;
+							size: 0.929em;
 							weight: 600;
 						}
 						text-transform: uppercase;
@@ -144,9 +144,9 @@
 					&-desription{
 						text-align: center;
 						@include crimson-roman;
-						line-height: 16px;
+						line-height: 1.2em;
 						font:{
-							size: 14px;
+							size: 1em;
 							weight: 550;
 						}
 						color: $font-light;
