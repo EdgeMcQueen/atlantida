@@ -1429,22 +1429,6 @@ body {
   color: #3e3d3d;
 }
 
-.ourteam .container {
-  height: inherit;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-}
-
 .ourteam__header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1455,10 +1439,6 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   text-align: center;
 }
@@ -1534,6 +1514,7 @@ body {
           flex-grow: 1;
   height: auto;
   position: relative;
+  cursor: pointer;
 }
 
 .ourteam__content__card:nth-child(-n+3) {
@@ -1547,6 +1528,15 @@ body {
 
 .ourteam__content__card:nth-child(3) {
   margin-right: 0;
+}
+
+.ourteam__content__card:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transition-property: background-color, opacity;
+  -o-transition-property: background-color, opacity;
+  transition-property: background-color, opacity;
 }
 
 @media screen and (max-width: 768px) {
@@ -1599,13 +1589,16 @@ body {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 95%;
-  height: 95%;
+  width: 93%;
+  height: 92%;
   background-color: #ffffff;
   opacity: 0;
-  -webkit-transition: 0.1s ease-in;
-  -o-transition: 0.1s ease-in;
-  transition: 0.1s ease-in;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transition-property: background-color, opacity;
+  -o-transition-property: background-color, opacity;
+  transition-property: background-color, opacity;
 }
 
 .ourteam__content__card-content:hover {
