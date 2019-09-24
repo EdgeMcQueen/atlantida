@@ -32,7 +32,6 @@
 
 
 // Основные файлы
-@import "block/_social.scss";
 @import "block/index/_header.scss";
 @import "block/index/_aboutUs.scss";
 @import "block/index/_services.scss";
@@ -40,3 +39,9 @@
 @import "block/index/_ourTeam.scss";
 @import "block/index/_portfolio.scss";
 @import "block/index/_quality.scss";
+
+@import "block/index/_blog.scss";
+
+// глобальные блоки
+@import "block/_social.scss";
+@import "block/_section-header.scss";

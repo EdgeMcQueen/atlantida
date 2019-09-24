@@ -1,0 +1,24 @@
+.section-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+    &__headline {
+      @include title($amsdam-regular, $font-dark);
+      &--light {
+        @include title($amsdam-regular, $font-light);
+      }
+  }
+
+    &__title {
+      margin:{
+        top: 38px;
+        bottom: 58px;
+      }
+      @include subtitle($crimson-roman, $font-dark);
+      &--light {
+        @include subtitle($crimson-roman, $font-light);
+      }
+  }
+}

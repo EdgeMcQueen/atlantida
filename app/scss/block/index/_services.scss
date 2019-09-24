@@ -4,18 +4,6 @@
 		padding: 68px 0 83px;
 		background: url('../img/services/background.png') no-repeat;
 
-		&__header{
-
-			&--title{
-				@include title($amsdam-regular, $bg-light);
-			}
-
-			&--subtitle{
-				margin: 40px 0 44px 0;
-				@include subtitle($crimson-roman, $ss-col);
-			}
-		}
-
 		&__body{
 			width: 100%;
 			display: flex;

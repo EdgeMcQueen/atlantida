@@ -7,6 +7,9 @@
   letter-spacing: -4.5px;
   color: $font-dark;
   transform: scale(1, 2);
+  &--light {
+	color: $font-light;
+  }
 } // end divider
 
 .icon{

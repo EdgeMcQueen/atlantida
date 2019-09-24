@@ -4,18 +4,6 @@
 		padding: 55px 0 82px;
 		background: $bs-hist;
 
-		&__header{
-
-			&--title{
-				@include title($amsdam-regular, $font-dark);
-			}
-
-			&--subtitle{
-				margin: 40px 0 44px 0;
-				@include subtitle($crimson-roman, $font-dark);
-			}
-		}
-
 		&__body{
 			// margin-top: 44px;
 		}

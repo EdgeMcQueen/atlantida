@@ -1,0 +1,49 @@
+.blog {
+    padding: 68px 0 83px;
+
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            display: flex;
+            &--reverse {
+                flex-direction: row-reverse;
+            }
+            width: 50%;
+            &-img {
+                width: inherit;
+            }
+        }
+    }
+
+    &-article {
+        display: flex;
+        flex-direction: column;
+        background-color: $ba-bg-dark;
+        color: $font-light;
+        transition: $easeIn-2s;
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &__date {
+            @include crimson-italic;
+            font-size: 12px;
+
+            &-author {
+                text-transform: capitalize;
+            }
+        }
+
+        &__headline {
+            text-transform: uppercase;
+            @include montserrat-regular;
+        }
+
+        &__title {
+            @include crimson-regular;
+            opacity: 0.7;
+        }
+    } // end article
+
+} // end blog
