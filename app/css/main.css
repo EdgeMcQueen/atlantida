@@ -148,7 +148,8 @@ body {
 .header-hero {
   background-image: url("../img/slider/Image.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-position: top center;
 }
 
@@ -313,7 +314,8 @@ body {
   height: 35px;
   background: #ffffff;
   border: none;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   cursor: pointer;
   outline: none;
 }
@@ -840,6 +842,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .services-section {
+    background: -webkit-radial-gradient(circle, #222225 0%, #2b2c31 100%);
     background: -o-radial-gradient(circle, #222225 0%, #2b2c31 100%);
     background: radial-gradient(circle, #222225 0%, #2b2c31 100%);
   }
@@ -945,7 +948,8 @@ body {
           justify-content: center;
   width: 73px;
   height: 73px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   border: 2px solid #3e3d3d;
 }
 
@@ -995,7 +999,8 @@ body {
   right: -1.8%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1015,7 +1020,8 @@ body {
   right: -1.8%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1033,7 +1039,8 @@ body {
   right: -1.7%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1051,7 +1058,8 @@ body {
   left: -1.2%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1068,7 +1076,8 @@ body {
   right: -1.7%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1086,7 +1095,8 @@ body {
   left: -1.2%;
   width: 17px;
   height: 17px;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
   display: inline-block;
   background: #3e3d3d;
 }
@@ -1353,7 +1363,8 @@ body {
   padding-top: 66px;
   padding-bottom: 70px;
   background-image: url(../img/ourTeam/Image.png);
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   color: #3e3d3d;
@@ -1630,7 +1641,8 @@ body {
 }
 
 .portfolio__content-box {
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   font-size: 2em;
