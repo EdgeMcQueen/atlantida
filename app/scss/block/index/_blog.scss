@@ -1,9 +1,10 @@
 .blog {
-    padding: 68px 0 83px;
+    padding-top: 68px;
 
     &_content {
         display: flex;
         flex-wrap: wrap;
+        background-color: $ba-bg-dark;
         &__item {
             display: flex;
             &--reverse {
@@ -11,15 +12,17 @@
             }
             width: 50%;
             &-img {
-                width: inherit;
+                display: inline-block;
+                width: 50%;
             }
         }
     }
 
     &-article {
-        display: flex;
-        flex-direction: column;
-        background-color: $ba-bg-dark;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        padding: 50px 35px 75px;
         color: $font-light;
         transition: $easeIn-2s;
         &:hover {
@@ -42,6 +45,7 @@
 
         &__title {
             @include crimson-regular;
+            height: auto;
             opacity: 0.7;
         }
     } // end article
