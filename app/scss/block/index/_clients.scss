@@ -4,6 +4,11 @@
     &-img-block {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 83px;
+        &__item {
+          width: 136px;
+          height: 116px;
+        }
     }
 
     &-content {
@@ -25,10 +30,36 @@
             flex-direction: column;
             justify-content: space-between;
             text-align: center;
+            line-height: 1;
+            color: $font-light;
+            font-size: 14px;
+            @include montserrat-regular;
           }
 
           &-img {
             align-self: center;
+          }
+
+          &-quote {
+            display: inline-block;
+            margin: 60px 0 55px;
+            font-size: 20px;
+            @include crimson-italic;
+            quotes: "“" "”";
+            &:before {
+              content: '\275D';
+              font-size: 40px;
+            }
+            &:after {
+              content: '\275F\275F';
+              font-size: 40px;
+            }
+          }
+
+          &-author {
+            font-size: 13px;
+            text-transform: uppercase;
+            line-height: 4;
           }
         }
     }

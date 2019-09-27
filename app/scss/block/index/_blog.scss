@@ -67,7 +67,7 @@
         flex-grow: 1;
 
         &:hover {
-            opacity: 0.7;
+            background-color: $ba-bg-hover;
         }
 
         &__date {
