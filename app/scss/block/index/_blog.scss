@@ -2,51 +2,115 @@
     padding-top: 68px;
 
     &_content {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         background-color: $ba-bg-dark;
         &__item {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            flex-grow: 1; // это жадность т.е. элемент должен занимать всю ширину экрана
             &--reverse {
                 flex-direction: row-reverse;
             }
-            width: 50%;
-            &-img {
-                display: inline-block;
-                width: 50%;
+
+            @media screen and (max-width: 1366px) {
+                flex-basis: 673px; // базовая ширина
+                max-width: calc( (1336px / 2) * 100 ); // это для того чтобы блок занимал полностью весь экран надо будет переписать
             }
         }
     }
 
+    .article-header{
+        display: flex;
+        flex-grow: 1;
+        @media screen and (max-width: 1366px) {
+            flex-basis: 336px;
+            max-width: 336px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            max-width: 50%; // чтобы картинка занимала 50% экрана
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%; // тут уже 100%
+        }
+
+        &-img{
+            width: -webkit-fill-available; // интересное свойство второй раз его юзаю хром сам его предложил
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
     &-article {
-        width: auto;
-        height: auto;
-        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
         padding: 50px 35px 75px;
         color: $font-light;
         transition: $easeIn-2s;
+        flex-grow: 1;
+
         &:hover {
             opacity: 0.7;
         }
 
         &__date {
             @include crimson-italic;
-            font-size: 12px;
+            display: inline-block;
+            font-size: 0.857em;
+            padding-bottom: 13px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                width: 150px;
+                height: 2px;
+                background-color: $brd-grey-d;
+            }
+            
 
             &-author {
                 text-transform: capitalize;
             }
         }
-
         &__headline {
+            margin-top: 18px;
             text-transform: uppercase;
             @include montserrat-regular;
         }
 
         &__title {
+            margin-top: 40px;
             @include crimson-regular;
             height: auto;
+            font-size: 1em;
             opacity: 0.7;
+        }
+
+        @media screen and (max-width: 1366px) {
+            flex-basis: 336px;
+            max-width: calc( 336px - 70px ); // минусуем отступы внутренние, чтобы блок встал как нужно
+        }
+
+        @media screen and (max-width: 768px) {
+            max-width: 100%; // чтобы блок принял полную ширину экрана
+            justify-content: center;
+
+            &__title{
+                font-size: 1.3em;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            &__title{
+                font-size: 0.929em;
+            }
         }
     } // end article
 
