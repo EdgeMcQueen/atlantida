@@ -1,0 +1,19 @@
+.map {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 515px;
+  max-height: 515px;
+  background-image: url(../img/other/map.png);
+  background-size: cover;
+  background-position: center center;
+
+  &__geotag {
+    position: absolute;
+    right: 970px;
+    bottom: 250px;
+    display: block;
+  }
+} // end map
