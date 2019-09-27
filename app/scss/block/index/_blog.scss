@@ -39,8 +39,8 @@
         }
 
         @media screen and (max-width: 1366px) {
-            flex-basis: 336px;
-            max-width: 336px;
+            flex-basis: 336.5px;
+            max-width: 336.5px;
         }
 
         @media screen and (max-width: 1024px) {
@@ -110,11 +110,17 @@
         }
 
         @media screen and (max-width: 1366px) {
-            flex-basis: 336px;
-            max-width: calc( 336px - 70px ); // минусуем отступы внутренние, чтобы блок встал как нужно
+            flex-basis: 336.5px;
+            max-width: calc( 336.5px - 70px ); // минусуем отступы внутренние, чтобы блок встал как нужно
+        }
+
+        @media screen and (max-width: 1024px) {
+            flex-basis: 256px;
+            max-width: 50%;
         }
 
         @media screen and (max-width: 768px) {
+            flex-basis: 100%;
             max-width: 100%; // чтобы блок принял полную ширину экрана
             justify-content: center;
 
