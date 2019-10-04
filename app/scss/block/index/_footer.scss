@@ -17,13 +17,24 @@
 
   &-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    // justify-content: space-between; // плохая практика!
     height: auto;
     margin-top: 45px;
     padding-bottom: 60px;
     color: $font-lgrey;
     &-main {
-      flex-basis: 30%;
+      width: 40%;
+      flex-basis: 356px;
+      flex-grow: 1;
+      padding-right: 14px;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 1024px) {
+        padding-left: 14px;
+      }
 
       &__descript {
         @include crimson-regular;
@@ -41,8 +52,18 @@
     &-form {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      flex-basis: 60%;
+      flex-direction: row;
+      flex-grow: 1;
+      // justify-content: space-between; // плохая практика!
+      justify-content: flex-start;
+      width: 60%;
+      flex-basis: 770px;
+      padding-left: 14px;
+      box-sizing: border-box;
+
+      @media screen and (max-width: 1024px) {
+        padding-right: 14px;
+      }
 
       &__item {
         box-sizing: border-box;
@@ -53,7 +74,9 @@
         background-color: rgba(0, 0, 0, 0);
         color: $font-light;
         &--input {
-          flex-basis: 47%;
+          width: 40%;
+          flex-basis: 320px;
+          flex-grow: 1;
           height: 50px;
         }
         &::placeholder {
@@ -76,6 +99,33 @@
           background-color: $bg-submit-hover;
         }
       }
+      
+      input{
+        margin-right: 14px;
+        margin-bottom: 28px;
+
+        &:nth-child(4n+2) {
+          margin-right: 0;
+          margin-left: 14px;
+        }
+
+        &:nth-child(4n+4) {
+          margin-right: 0;
+          margin-left: 14px;
+        }
+
+        @media screen and (max-width: 680px) {
+          margin-right: 0;
+          &:nth-child(4n+2) {
+            margin-left: 0;
+          }
+
+          &:nth-child(4n+4) {
+            margin-left: 0;
+          }
+        }
+      }
+
     } // end form
   } // end -content
 
