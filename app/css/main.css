@@ -2198,7 +2198,6 @@ body {
 }
 
 .footer-content-main {
-  width: 40%;
   -webkit-flex-basis: 356px;
       -ms-flex-preferred-size: 356px;
           flex-basis: 356px;
@@ -2250,7 +2249,6 @@ body {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 60%;
   -webkit-flex-basis: 770px;
       -ms-flex-preferred-size: 770px;
           flex-basis: 770px;
