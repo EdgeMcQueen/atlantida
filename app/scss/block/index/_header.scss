@@ -136,8 +136,27 @@
   } // end button
 } // end slider-box
 
-.heroSlide {
-  display: none;
+// .heroSlide {
+//   display: none;
+// }
+
+.content_slider {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+    .info__slide {
+      width: 100%;
+      position: absolute;
+      left: 20%;
+      opacity: 0;
+      transition: opacity 1s;
+
+      &.showed {
+        opacity: 1;
+      }
+    }
 }
 
 .slider__swich {

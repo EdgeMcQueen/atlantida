@@ -302,8 +302,25 @@ body {
   margin-left: -7.5px;
 }
 
-.heroSlide {
-  display: none;
+.content_slider {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.content_slider .info__slide {
+  width: 100%;
+  position: absolute;
+  left: 20%;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.content_slider .info__slide.showed {
+  opacity: 1;
 }
 
 .slider__swich {
