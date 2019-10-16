@@ -26,7 +26,7 @@
     padding-bottom: 60px;
     color: $font-lgrey;
     &-main {
-      flex-basis: 356px;
+      flex-basis: calc(370px - 14px);
       flex-grow: 1;
       padding-right: 14px;
       box-sizing: border-box;
@@ -49,15 +49,16 @@
     } // end -main
 
     &-form {
+      position: relative;
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: wrap; // если вагон переполнится, выкидываем лишних пассажиров
       flex-direction: row;
-      flex-grow: 1;
       // justify-content: space-between; // плохая практика!
-      justify-content: flex-start;
-      flex-basis: 770px;
+      justify-content: flex-start; // чтоюы выкинутые пассажиры были изначально на стартовой отметке, а не где то там
+      flex-basis: calc(770px - 14px); //пусть формула сама считает 770px - размер в макете
+      flex-grow: 1; // пусть элемент будет жадным, и растягивается во всю ширину
       padding-left: 14px;
-      box-sizing: border-box;
+      box-sizing: border-box; // чтобы эмигранты не смогли пересечь границу
 
       @media screen and (max-width: 1024px) {
         padding-right: 14px;
@@ -73,7 +74,7 @@
         color: $font-light;
         &--input {
           width: 40%;
-          flex-basis: 320px;
+          flex-basis: 320px; // а тут указал явно
           flex-grow: 1;
           height: 50px;
         }
@@ -98,9 +99,13 @@
         }
       }
       
-      input{
+      input {
         margin-right: 14px;
         margin-bottom: 28px;
+
+        &:invalid {
+          border-color: $brd-invalid;
+        }
 
         &:nth-child(4n+2) {
           margin-right: 0;
@@ -123,7 +128,6 @@
           }
         }
       }
-
     } // end form
   } // end -content
 

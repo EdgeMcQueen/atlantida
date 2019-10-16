@@ -2198,9 +2198,9 @@ body {
 }
 
 .footer-content-main {
-  -webkit-flex-basis: 356px;
-      -ms-flex-preferred-size: 356px;
-          flex-basis: 356px;
+  -webkit-flex-basis: -webkit-calc(370px - 14px);
+      -ms-flex-preferred-size: calc(370px - 14px);
+          flex-basis: calc(370px - 14px);
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -2229,6 +2229,7 @@ body {
 }
 
 .footer-content-form {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2241,17 +2242,17 @@ body {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-flex-basis: 770px;
-      -ms-flex-preferred-size: 770px;
-          flex-basis: 770px;
+  -webkit-flex-basis: -webkit-calc(770px - 14px);
+      -ms-flex-preferred-size: calc(770px - 14px);
+          flex-basis: calc(770px - 14px);
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding-left: 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2332,6 +2333,10 @@ body {
 .footer-content-form input {
   margin-right: 14px;
   margin-bottom: 28px;
+}
+
+.footer-content-form input:invalid {
+  border-color: #f66558;
 }
 
 .footer-content-form input:nth-child(4n+2) {
