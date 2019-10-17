@@ -2222,6 +2222,9 @@ body {
   border: 1px solid #454545;
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .footer-content-form__item--input {
@@ -2259,6 +2262,14 @@ body {
   font-family: 'Crimson-Italic', sans-serif;
   font-size: 13px;
   text-transform: capitalize;
+}
+
+.footer-content-form__item:focus {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-content-form__mail[type=email]:invalid {
+  border-color: red;
 }
 
 .footer-content-form__submit {
@@ -2305,6 +2316,15 @@ body {
 .footer-contacts__phone {
   font-family: 'Montserrat-Regular', sans-serif;
   color: #ffffff;
+}
+
+.footer__copyright {
+  display: block;
+  margin-top: 60px;
+  padding: 40px 0;
+  border-top: 1px solid #454545;
+  font-family: 'Crimson-Italic', sans-serif;
+  color: #949494;
 }
 
 .social {

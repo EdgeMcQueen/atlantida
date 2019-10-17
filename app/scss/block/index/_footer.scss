@@ -52,6 +52,7 @@
         border: 1px solid $brd-grey-d;
         background-color: rgba(0, 0, 0, 0);
         color: $font-light;
+        transition: $easeIn-2s;
         &--input {
           flex-basis: 47%;
           height: 50px;
@@ -61,6 +62,19 @@
           font-size: 13px;
           text-transform: capitalize;
         }
+        &:focus {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      &__mail {
+
+        &[type=email]:invalid {
+          border-color: red;
+        }
+      }
+
+      &__phone {
       }
 
       &__submit {
@@ -77,6 +91,12 @@
         }
       }
     } // end form
+    .form--item-highlight {
+      &:invalid {
+
+      }
+
+    }
   } // end -content
 
   &-contacts {
@@ -98,4 +118,13 @@
       color: $font-light;
     }
   } // end -contacts
+
+  &__copyright {
+    display: block;
+    margin-top: 60px;
+    padding: 40px 0;
+    border-top: 1px solid $brd-grey-d;
+    @include crimson-italic;
+    color: $font-fgrey;
+  }
 } // end footer

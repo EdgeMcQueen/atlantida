@@ -606,7 +606,7 @@
     <!-- end clients -->
 
     <section class="map">
-      <img src="img/other/map-geotag.png" alt="" class="map__geotag">
+      <!-- <img src="img/other/map-geotag.png" alt="" class="map__geotag"> -->
     </section>
     <!-- end map -->
   </main>
@@ -637,12 +637,12 @@
       </div>
 
       <form class="footer-content-form" action="www.ablah.stan">
-        <input type="text" placeholder="Name*" class="footer-content-form__item footer-content-form__item--input footer-content-form__name">
-        <input type="email" placeholder="E-mail*" class="footer-content-form__item footer-content-form__item--input footer-content-form__mail">
-        <input type="tel" placeholder="Telephone*" class="footer-content-form__item footer-content-form__item--input footer-content-form__phone">
-        <input type="url" placeholder="Website*" class="footer-content-form__item footer-content-form__item--input footer-content-form__website">
-        <textarea name="message" placeholder="Message" rows="8" cols="80" class="footer-content-form__item footer-content-form__message"></textarea>
-        <input type="submit" name="submit" value="Submit" class="footer-content-form__submit">
+        <input required type="text" placeholder="Name*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__name">
+        <input required type="email" placeholder="E-mail*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__mail">
+        <input required type="tel" placeholder="Telephone*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__phone">
+        <input required type="url" placeholder="Website*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__website">
+        <textarea name="message" placeholder="Message" rows="8" cols="80" class="form--item-highlight footer-content-form__item footer-content-form__message"></textarea>
+        <input type="submit" name="submit" value="Submit" class="form--item-highlight footer-content-form__submit">
       </form>
     </div>
     <!-- end footer-content -->
@@ -659,6 +659,10 @@
       </a>
     </ul>
     <!-- end social -->
+
+    <span class="footer__copyright">
+      Copyright © 2015 Atlantida Theme
+    </span>
 
     </div>
   </footer>
