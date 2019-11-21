@@ -636,13 +636,13 @@
         </address>
       </div>
 
-      <form class="footer-content-form" action="www.ablah.stan">
-        <input required type="text" placeholder="Name*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__name">
-        <input required type="email" placeholder="E-mail*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__mail">
-        <input required type="tel" placeholder="Telephone*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__phone">
-        <input required type="url" placeholder="Website*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__website">
-        <textarea name="message" placeholder="Message" rows="8" cols="80" class="form--item-highlight footer-content-form__item footer-content-form__message"></textarea>
-        <input type="submit" name="submit" value="Submit" class="form--item-highlight footer-content-form__submit">
+      <form name="mainForm" id="form" class="footer-content-form" onclick="validateForm()">
+        <input onblur="validateName()" name="fname" id="fname" type="text" pattern="[A-Za-z]" required placeholder="Name*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__name">
+        <input name="femail" id="femail" type="email" placeholder="E-mail*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__mail">
+        <input name="fphone" id="fphone" type="tel" placeholder="Telephone*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__phone">
+        <input name="fsite" id="fsite" type="url" placeholder="Website*" class="form--item-highlight footer-content-form__item footer-content-form__item--input footer-content-form__website">
+        <textarea name="message" id="fmessage" placeholder="Message" rows="8" cols="80" class="form--item-highlight footer-content-form__item footer-content-form__message"></textarea>
+        <input id="event-off" name="fsubmit" type="submit" value="Submit" class="form--item-highlight footer-content-form__submit">
       </form>
     </div>
     <!-- end footer-content -->
@@ -670,10 +670,12 @@
 
 
     <!-- script's -on -->
- <script src="js/libs.min.js"></script>
- <script src="js/common.js"></script>
- <script src="js/hero-slide.js"></script>
+  <script src="js/serialize.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/hero-slide.js"></script>
   <script src="js/contacts-slide.js"></script>
+  <script src="js/form.js"></script>
     <!-- script's -off -->
 </body>
 </html>

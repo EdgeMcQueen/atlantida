@@ -91,9 +91,6 @@
 
       &__mail {
 
-        &[type=email]:invalid {
-          border-color: red;
-        }
       }
 
       &__phone {
@@ -112,14 +109,10 @@
           background-color: $bg-submit-hover;
         }
       }
-      
+
       input {
         margin-right: 14px;
         margin-bottom: 28px;
-
-        &:invalid {
-          border-color: $brd-invalid;
-        }
 
         &:nth-child(4n+2) {
           margin-right: 0;
