@@ -97,6 +97,28 @@ body {
   overflow: hidden;
 }
 
+#divider {
+  margin: 0 auto;
+  display: inline-block;
+  height: 9px;
+  background-image: url("../img/other/wave-border.png");
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  color: #e8665f;
+}
+
+#section__headline {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
 .divider {
   margin-top: -20px;
   display: inline-block;

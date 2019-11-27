@@ -1,5 +1,23 @@
 // Tools
 
+#divider {
+	display: inline-block;
+	height: 10px;
+	margin: 0 auto;
+	background-image: url("../img/other/wave-border.png");
+	background-repeat: repeat-x;
+	background-position-y: bottom;
+	color: #e8665f;
+}
+
+#section__headline {
+	align-self: center;
+	width: fit-content;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
 .divider {
   margin-top: -20px;
   display: inline-block;
