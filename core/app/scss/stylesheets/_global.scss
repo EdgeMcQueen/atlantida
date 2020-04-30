@@ -1,3 +1,21 @@
+// Global styles
+
+.container {
+  @include container();
+  @include sm(max-width, rem(510));
+  @include md(max-width, rem(690));
+  @include lg(max-width, rem(930));
+  @include xl(max-width, rem(1110));
+  @include xs-block() {
+    padding-left: $fields;
+    padding-right: $fields;
+  }
+  @include sm-block() {
+    padding-left: $fields * 2;
+    padding-right: $fields * 2;
+  }
+}
+
 // Tools
 
 .divider {
@@ -37,27 +55,28 @@
 		display: inline-block;
 		width: 38px;
 		height: 41px;
-		background: url('../img/about us/icon-award.png');
+		background: url('../img/aboutUs/icon-award.png');
 	}
 
 	&__jobs{
 		display: inline-block;
 		width: 41px;
 		height: 40px;
-		background: url('../img/about us/icon-checked.png');
+		background: url('../img/aboutUs/icon-checked.png');
 	}
 
 	&__happy{
 		display: inline-block;
 		width: 33px;
 		height: 39px;
-		background: url('../img/about us/icon-dima.png');
+		background: url('../img/aboutUs/icon-dima.png');
 	}
 
 	&__reviews{
 		display: inline-block;
 		width: 41px;
 		height: 37px;
-		background: url('../img/about us/icon-briefcase.png');
+		background: url('../img/aboutUs/icon-briefcase.png');
 	}
 } // end icon
+

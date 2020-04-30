@@ -1,2 +1,7 @@
 /source/**
 /node_modules/**
+core/sources/**
+core/source/**
+core/node_modules/**
+/.idea/**
+/app/**/*
