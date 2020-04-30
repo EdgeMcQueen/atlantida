@@ -97,43 +97,39 @@ body {
   overflow: hidden;
 }
 
-#divider {
-  margin: 0 auto;
+.divider {
   display: inline-block;
-  height: 9px;
-  background-image: url("../img/other/wave-border.png");
-  background-repeat: repeat-x;
-  background-position-y: bottom;
-  color: #e8665f;
+  height: 26px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
 #section__headline {
   -webkit-align-self: center;
       -ms-flex-item-align: center;
           align-self: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
 
+/*
 .divider {
-  margin-top: -20px;
-  display: inline-block;
-  font-size: 25px;
-  letter-spacing: -4.5px;
-  color: #3e3d3d;
-  -webkit-transform: scale(1, 2);
-      -ms-transform: scale(1, 2);
-          transform: scale(1, 2);
-}
 
-.divider--light {
-  color: #ffffff;
-}
-
+  &::after {
+	position: absolute;
+	bottom: 0;
+	content: '~~~~~~~~~~~~~~~~~~~~';
+	display: inline-block;
+	font-size: 25px;
+	letter-spacing: -4.5px;
+	color: $font-dark;
+	transform: scale(1, 2);
+  }
+} // end divider
+*/
 .icon__awards {
   display: inline-block;
   width: 38px;
