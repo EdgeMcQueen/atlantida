@@ -16,7 +16,6 @@
 //   x[slideIndex-1].style.display = "block";
 // }
 
-
 // прежде чем писать жаба скрипт код объявляй window.onload = function!!!!
 // ООПэшный слайдер, можно переиспользовать много много раз, просто при вызове менять параметры вот пример:
 /*
@@ -30,56 +29,61 @@
 
 
 */
-window.onload = function() {
-
+window.onload = function () {
   // вызов слайдера с опциями:
   new Slider({
-      content: '.content_slider .info__slide',
-      btn_prev: '.content_slider .btn_prev',
-      btn_next: '.content_slider .btn_next',
-      auto: true,
-      rate: 4500
+    content: ".content_slider .info__slide",
+    btn_prev: ".content_slider .btn_prev",
+    btn_next: ".content_slider .btn_next",
+    auto: true,
+    rate: 4500
   });
-	
-	// Храним в классе весь функционал слайдера:
-	function Slider(obj) {
-		this.content = document.querySelectorAll(obj.content); //получим всем элементы
 
-		this.auto = obj.auto;
+  // Храним в классе весь функционал слайдера:
+  function Slider(obj) {
+    this.content = document.querySelectorAll(obj.content); //получим всем элементы
 
-		this.btn_prev = obj.btn_prev;
-		this.btn_next = obj.btn_next;
+    this.auto = obj.auto;
 
-		this.rate = obj.rate || 1000;
+    this.btn_prev = obj.btn_prev;
+    this.btn_next = obj.btn_next;
 
-		//счетчик на нуле
-		var i = 0;
+    this.rate = obj.rate || 1000;
 
-		//присваиваем переменной this
-		var slider = this;
+    //счетчик на нуле
+    var i = 0;
 
-		// переключалки:
-		this.prev = function() {
-			slider.content[i].classList.remove('showed');
-			i--;
-				if (i < 0) { i = slider.content.length - 1; }
+    //присваиваем переменной this
+    var slider = this;
 
-			slider.content[i].classList.add('showed');
-		}
+    // переключалки:
+    this.prev = function () {
+      slider.content[i].classList.remove("showed");
+      i--;
+      if (i < 0) {
+        i = slider.content.length - 1;
+      }
 
-		this.next = function() {
-			slider.content[i].classList.remove('showed');
-			i++;
+      slider.content[i].classList.add("showed");
+    };
 
-			if (i >= slider.content.length) { i = 0; }
+    this.next = function () {
+      slider.content[i].classList.remove("showed");
+      i++;
 
-			slider.content[i].classList.add('showed');
-		}
+      if (i >= slider.content.length) {
+        i = 0;
+      }
 
-		//получим кнопки:
-		document.querySelector(slider.btn_prev).onclick = slider.prev;
-		document.querySelector(slider.btn_next).onclick = slider.next;
+      slider.content[i].classList.add("showed");
+    };
 
-		if (slider.auto) { setInterval(slider.next, slider.rate); }
-	}
-}
+    //получим кнопки:
+    document.querySelector(slider.btn_prev).onclick = slider.prev;
+    document.querySelector(slider.btn_next).onclick = slider.next;
+
+    if (slider.auto) {
+      setInterval(slider.next, slider.rate);
+    }
+  }
+};
