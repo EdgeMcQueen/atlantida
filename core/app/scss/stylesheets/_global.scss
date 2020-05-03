@@ -38,9 +38,9 @@ body {
   text-align: center;
 }
 
-/*
-.divider {
 
+.divider {
+  position: relative;
   &::after {
 	position: absolute;
 	bottom: 0;
@@ -52,7 +52,7 @@ body {
 	transform: scale(1, 2);
   }
 } // end divider
-*/
+
 
 .icon {
   &__awards {

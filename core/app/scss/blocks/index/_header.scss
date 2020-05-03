@@ -9,9 +9,9 @@
 // main-nav
 
 .main-nav {
-  padding: 15px $offset;
+  padding: 15px 0;
   background: $bg-light;
-  @include font(em(12), 400,$monserrat,);
+  @include font(em(12), 400, $monserrat);
   // line-height: 65px;
   & .container {
     display: flex;

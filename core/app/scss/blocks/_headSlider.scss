@@ -5,9 +5,17 @@
   text-align: center;
 
   &__item {
-    max-width: 540px;
+    max-width: rem(200);
     padding: 15px 15px 140px;
-    font-size: calc(0.5em + 1vw);
+    font-size: em(10);
+    @include sm-block() {
+      max-width: rem(300);
+      font-size: em(12);
+    }
+    @include md-block() {
+      max-width: rem(500);
+      font-size: em(16);
+    }
   }
 
   &__sup-headline {
@@ -17,28 +25,34 @@
   &__headline {
     margin-top: 25px;
     padding: 30px 15px;
+    line-height: 1.5;
     text-transform: uppercase;
     @include font(em(32), 400, $amsdam);
     border: {
-      top: 2px solid $bdr-light;
-      bottom: 2px solid $bdr-light;
+      top: 10px solid transparent;
+      bottom: 10px solid transparent;
     }
+    border-left: none;
+    border-right: none;
+    border-image: url(../img/other/divider.png) 150 round;
   }
 
   &__link {
     position: relative;
     bottom: -40px;
+    margin: 0 auto;
     padding: 15px 30px;
     border: 2px solid $bdr-light;
     color: $font-light;
     text-transform: capitalize;
+    white-space: nowrap;
     @include font(em(20), 400, $monserrat);
 
     &::before {
       content: url(../img/slider/Arrow.png);
       position: absolute;
       left: 50%;
-      bottom: -75%;
+      bottom: rem(-47);
       transform: translateX(-50%);
     }
   }
@@ -55,8 +69,7 @@
     border-radius: 50%;
     cursor: pointer;
     outline: none;
-    @include font(0, 400, $family: $amsdam)
-    &.slick-prev {
+    @include font(0, 400, $family: $amsdam) &.slick-prev {
       left: 0;
       &::after {
         content: "<";
