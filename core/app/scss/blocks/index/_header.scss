@@ -1,31 +1,28 @@
-.header {
-  background: $bg-light;
+.main-header {
   color: $font-dark;
-
-  &-hero {
-    background-image: url("../img/slider/Image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-  }
+  background-image: url("../img/slider/Image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
 }
 
 // main-nav
 
 .main-nav {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 65px;
-  padding-top: 15px;
-  @include font(em(12), $monserrat, 400);
+  padding: 15px $offset;
+  background: $bg-light;
+  @include font(em(12), 400,$monserrat,);
   // line-height: 65px;
+  & .container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   &__logo {
     display: inline-block;
-    @include font(em(24), $monserrat, 400);
+    @include font(em(24), 400, $monserrat);
     &:visited {
       color: $main-logo-grey;
     }
@@ -43,27 +40,21 @@
     display: none;
     @include lg-block() {
       display: inline-flex;
-      // justify-content: space-between;
-      // width: 580px;
-      // height: 12px;
-      flex: 0 0 60%;
+      flex-basis: 60%;
     }
-
     max-width: 60%;
     color: $main-link-color;
-
 
     &-item {
       margin-right: 16px;
 
-        &:last-child{
-          margin-right: 0;
-        }
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &-link {
-      font-size: 1em;
-      font-weight: 550;
+      @include font(em(16), 400);
       text-transform: uppercase;
       color: $main-link-color;
 
@@ -80,105 +71,9 @@
 }
 // end nav
 
-
 // header_hero
 .header-hero {
   width: 100%;
-  height: 635px;
-  font-family: "Amsdam";
   color: $font-light;
-
-  &__slider {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    height: 320px;
-    margin-top: 180px;
-    text-align: center;
-  }
+  padding: 180px 0 200px;
 } // end header-hero
-
-.slider-box {
-  max-width: 520px;
-  align-self: center;
-  justify-content: space-between;
-  font-size: 1.071em;
-  line-height: 7em;
-
-  &__sup-headline {
-    font-size: 1em;
-  }
-
-  &__headline {
-    text-transform: uppercase;
-    font-size: 2.2em;
-    border-top: 2px solid $bdr-light;
-    border-bottom: 2px solid $bdr-light;
-  }
-
-  &__button {
-    position: relative;
-    box-sizing: border-box;
-    padding: 15px 30px;
-    width: 155px;
-    height: 50px;
-    border: 2px solid $bdr-light;
-    color: $font-light;
-    text-transform: capitalize;
-
-    &::after {
-      content: url(../img/slider/Arrow.png);
-      position: absolute;
-      top: 58.2%;
-      left: 50%;
-      margin-left: -7.5px;
-    }
-  } // end button
-} // end slider-box
-
-// .heroSlide {
-//   display: none;
-// }
-
-.content_slider {
-  width: 75%;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-
-    .info__slide {
-      width: 100%;
-      position: absolute;
-      left: 20%;
-      opacity: 0;
-      transition: opacity 1s;
-
-      &.showed {
-        opacity: 1;
-      }
-    }
-}
-
-.slider__swich {
-  position: absolute;
-  top: 50%;
-  margin-top: -17.5px;
-  display: block;
-  width: 35px;
-  height: 35px;
-  background: $bg-light;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  outline: none;
-
-  &--left {
-
-  }
-
-  &--right {
-    right: 0;
-  }
-} // end slider__swich

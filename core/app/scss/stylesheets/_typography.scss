@@ -265,11 +265,11 @@ $crimsonRoman: "CrimsonTextRoman";
 $monserrat: "Monserrat";
 $amsdam: "Amsdam";
 
-
-@mixin font($size, $family, $weight) {
+@mixin font($size: null, $weight: null, $family: null, $style: null) {
   font: {
     family: $family;
     size: $size;
     weight: $weight;
   }
+  font-style: $style;
 }

@@ -1,0 +1,76 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  &__item {
+    max-width: 540px;
+    padding: 15px 15px 140px;
+    font-size: calc(0.5em + 1vw);
+  }
+
+  &__sup-headline {
+    @include font(em(18), 400, $crimsonRoman);
+  }
+
+  &__headline {
+    margin-top: 25px;
+    padding: 30px 15px;
+    text-transform: uppercase;
+    @include font(em(32), 400, $amsdam);
+    border: {
+      top: 2px solid $bdr-light;
+      bottom: 2px solid $bdr-light;
+    }
+  }
+
+  &__link {
+    position: relative;
+    bottom: -40px;
+    padding: 15px 30px;
+    border: 2px solid $bdr-light;
+    color: $font-light;
+    text-transform: capitalize;
+    @include font(em(20), 400, $monserrat);
+
+    &::before {
+      content: url(../img/slider/Arrow.png);
+      position: absolute;
+      left: 50%;
+      bottom: -75%;
+      transform: translateX(-50%);
+    }
+  }
+
+  & button.slick-arrow {
+    position: absolute;
+    z-index: 999;
+    top: calc(25% + 1vw);
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: $bg-light;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    @include font(0, 400, $family: $amsdam)
+    &.slick-prev {
+      left: 0;
+      &::after {
+        content: "<";
+        line-height: 0.5;
+        font-size: 20px;
+      }
+    }
+    &.slick-next {
+      right: 0;
+      &::after {
+        content: ">";
+        line-height: 0.5;
+        font-size: 20px;
+      }
+    }
+  }
+}

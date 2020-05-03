@@ -86,26 +86,26 @@ body {
 
 // global section headline styles
 .section-header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-family: "Amsdam";
-    &__headline {
-      color: $font-dark;
-      &--light {
-        color: $font-light;
-      }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-family: "Amsdam";
+  &__headline {
+    color: $font-dark;
+    &--light {
+      color: $font-light;
+    }
   }
 
-    &__title {
-      margin-top: 38px;
-      margin-bottom: 58px;
-      font-family: "CrimsonTextRoman";
-      color: $font-dark;
-      &--light {
-        color: $font-light;
-      }
+  &__title {
+    margin-top: 38px;
+    margin-bottom: 58px;
+    font-family: "CrimsonTextRoman";
+    color: $font-dark;
+    &--light {
+      color: $font-light;
+    }
   }
 }
 
@@ -120,15 +120,14 @@ body {
 
 .social-item {
   &__link {
-      &--divider {
-
-          &::before {
-            content: '|';
-          }
-
-          &::after {
-            content: '|';
-          }
+    &--divider {
+      &::before {
+        content: "|";
       }
-    } // end link
+
+      &::after {
+        content: "|";
+      }
+    }
+  } // end link
 }
