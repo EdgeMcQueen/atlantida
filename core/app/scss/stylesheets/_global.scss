@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Crimson Text Roman";
+  font-family: "CrimsonTextRoman";
 }
 
 // Global styles
@@ -23,13 +23,6 @@ body {
 
 // Tools
 
-.divider {
-  display: inline-block;
-  height: 26px;
-  margin: 0 auto;
-  overflow-x: hidden;
-}
-
 #section__headline {
   align-self: center;
   box-sizing: content-box;
@@ -37,22 +30,6 @@ body {
   vertical-align: top;
   text-align: center;
 }
-
-
-.divider {
-  position: relative;
-  &::after {
-	position: absolute;
-	bottom: 0;
-	content: '~~~~~~~~~~~~~~~~~~~~';
-	display: inline-block;
-	font-size: 25px;
-	letter-spacing: -4.5px;
-	color: $font-dark;
-	transform: scale(1, 2);
-  }
-} // end divider
-
 
 .icon {
   &__awards {
@@ -86,15 +63,29 @@ body {
 
 // global section headline styles
 .section-header {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  font-family: "Amsdam";
+  @include font(em(20), 400, $amsdam);
+  text-transform: uppercase;
+  white-space: nowrap;
   &__headline {
+    display: inline-block;
+    padding: 30px 25px 25px 25px;
+    margin-bottom: 20px;
+    @include sm-block() {
+      padding: 60px 25px 25px 25px;
+      margin-bottom: 40px;
+    }
     color: $font-dark;
+    border-bottom: 3px solid transparent;
+    border-left: none;
+    border-right: none;
+    border-image: url(../img/other/divider-dark.png) 150 round;
     &--light {
+      padding-top: 70px;
       color: $font-light;
+      border-image: url(../img/other/divider.png) 150 round;
     }
   }
 

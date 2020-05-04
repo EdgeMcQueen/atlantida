@@ -1,0 +1,327 @@
+.aboutus {
+	padding: 72px 0 60px;
+	background-color: $bg-grey;
+
+	& .aboutus-content {
+		background-color: $bg-light;
+		@include font(em(13), 600, $monserrat);
+		padding: 0 70px;
+		&__img {
+			width: 100%;
+			height: auto;
+		}
+		&__seotxt {
+			text-align: center;
+			@include sm-block() {
+				text-align: right;
+			}
+			@include font(em(14), 400, $crimsonRoman);
+		}
+		&__link-wrap {
+			text-align: center;
+			padding: 50px 0;
+		}
+		&__link {
+			display: inline-block;
+			padding: 14px 26px;
+			color: $font-dark;
+			background: transparent;
+			border: 2px solid $bdr-dark;
+			&:hover{
+				background: $bg-dark;
+				color: $font-light;
+			}
+		}
+	} // end .aboutus-content
+
+	& .aboutus-aboutwork {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		@include sm-block() {
+			flex-wrap: nowrap;
+		}
+
+		&__work-item{
+			display: block;
+			padding: em(25);
+			@include sm-block() {
+			}
+			@include lg-block() {
+				padding: 0 em(90) em(40);
+			}
+			margin: em(40) 0;
+			text-align: center;
+			border-bottom: 1px solid $bdr-grey;
+			@include sm-block() {
+				border-bottom: none;
+			}
+				&:nth-child(1){
+					@include sm-block() {
+						border-right: 1px solid $bdr-grey;
+					}
+				}
+				&:nth-child(2){
+					@include sm-block() {
+						border-right: 1px solid $bdr-grey;
+					}
+				}
+				&:nth-child(3){
+					@include sm-block() {
+						border-right: 1px solid $bdr-grey;
+					}
+				}
+
+			.work-item{
+				&__icon {
+					display: block;
+					margin: 0 auto;
+
+				}
+				&__info {
+					display: block;
+					font:{
+						size: 0.929em;
+						weight: 550;
+					}
+					margin: 22px 0 28px;
+					color: $font-dark;
+				}
+
+				&__count{
+					display: block;
+					font:{
+						size: 2.8em;
+						weight: 600;
+					}
+					color: $font-dark;
+				}
+			}
+
+		} //-end __work-item
+	}
+}
+
+// .aboutus{
+
+// 	&-section{
+// 		padding: 72px 0 60px 0;
+// 		background: $bg-grey;
+// 	}
+
+// 	&-card{
+// 		width: 100%;
+// 		display: flex;
+// 		flex-direction: column;
+
+// 			&__header{
+// 				display: flex;
+// 				&--img{
+// 					max-width: 100%;
+// 					width: 100%;
+// 					height: auto;
+// 					object-fit: contain;
+// 				}
+// 			}
+
+// 			&__body{
+// 				@include amsdam-regular;
+// 				padding: 60px 70px 50px 70px;
+// 				background: $bg-light;
+
+// 					&-title{
+// 						text-transform: uppercase;
+// 						font-size: 1.429em;
+// 						font-weight: 400;
+// 						text-align: center;
+// 						color: $font-dark;
+// 					}
+
+// 					&-ceotxt{
+// 						margin: 42px 0 32px 0;
+// 						@include crimson-roman;
+// 						font:{
+// 							size: 1em;
+// 							weight: 550;
+// 						}
+// 						color: $font-dark;
+// 					}
+
+// 					&-ul{
+// 						margin-top: 16px;
+// 						display: flex;
+// 						justify-content: center;
+// 						@include montserrat-regular;
+// 							@media screen and (max-width: 375px) {
+// 								flex-direction: row;
+// 								flex-wrap: wrap;
+// 							}
+// 					}
+
+// 					&-link{
+// 						padding: 14px 26px;
+// 						margin-right: 4px;
+// 						font:{
+// 							size: 0.929em;
+// 							weight: 600;
+// 						}
+// 						position: relative;
+// 						color: $font-dark;
+// 						background: transparent;
+// 						border: 2px solid $brd-dark;
+// 						@include transition($easeIn-1s, background, color, background-color, padding);
+// 						&:last-child{
+// 							margin-right: 0;
+// 						}
+// 						&:hover{
+// 							@include transition($easeOut-3s, background, color, background-color, padding);
+// 							background: $bg-dark;
+// 							color: $font-light;
+// 						}
+
+// 						@media screen and (max-width: 375px) {
+// 							width: 100%;
+// 							margin-right: 0;
+// 							margin-bottom: 14px;
+// 							flex-grow: 1;
+// 								&:last-child{
+// 									margin-bottom: 0;
+// 								}
+
+// 								&:hover{
+// 									padding: 14px 26px 14px 45px;
+// 									&::before{
+// 										content: '';
+// 										position: absolute;
+// 										top: 50%;
+// 										left: 15px;
+// 										width: 20px;
+// 										height: 1px;
+// 										background-color: $bg-light;
+// 									}
+// 								}
+// 						}
+// 					}
+// 					@media screen and (max-width: 768px) {
+// 						padding: 45px 32px 30px 32px;
+// 					}
+	
+// 					@media screen and (max-width: 375px) {
+// 						padding: 30px 24px 25px 24px;
+// 					}
+	
+// 			}
+
+// 	} // end -card
+
+// 	&-aboutwork{
+// 		width: 100%;
+// 		box-sizing: border-box;
+// 		display: flex;
+// 		flex-direction: row;
+// 		flex-wrap: wrap;
+// 		align-items: stretch;
+// 		justify-content: flex-start;
+// 		margin-top: 36px;
+
+// 		&__work-item{
+// 			display: flex;
+// 			flex-direction: column;
+// 			align-items: center;
+// 			width: 24.8888%;
+// 			flex-basis: 270px;
+// 			// width: percentage(0.24); // функция из sass расчитывает проценты 0.24 = 24%
+// 			flex-grow: 1;
+// 				&:nth-child(1){
+// 					border-right: 1px solid $brd-grey;
+// 				}
+// 				&:nth-child(2){
+// 					border-right: 1px solid $brd-grey;
+// 				}
+// 				&:nth-child(3){
+// 					border-right: 1px solid $brd-grey;
+// 				}
+
+// 			.work-item{
+// 				&__info{
+// 					@include montserrat-regular;
+// 					font:{
+// 						size: 0.929em;
+// 						weight: 550;
+// 					}
+// 					margin: 22px 0 28px;
+// 					color: $font-dark;
+// 				}
+
+// 				&__count{
+// 					@include montserrat-regular;
+// 					font:{
+// 						size: 2.8em;
+// 						weight: 600;
+// 					}
+// 					color: $font-dark;
+// 				}
+// 			}
+
+// 			@media screen and (max-width: 768px) {
+// 				&:nth-child(1){
+// 					border-right: none;
+// 				}
+// 				&:nth-child(2){
+// 					border-right: none;
+// 				}
+// 				&:nth-child(3){
+// 					border-right: none;
+// 				}
+// 				&:nth-child(-n + 2){
+// 					margin-bottom: 30px;
+// 					position: relative;
+// 					&::before{
+// 						content: '';
+// 						position: absolute;
+// 						bottom: -15px;
+// 						width: 85%;
+// 						height: 1px;
+// 						background-color: $brd-grey;
+// 					}
+// 				}
+// 			}
+
+// 			@media screen and (max-width: 425px) {
+// 				&:nth-child(-n + 4){
+// 					margin-bottom: 30px;
+// 					position: relative;
+// 					&::before{
+// 						content: '';
+// 						position: absolute;
+// 						bottom: -15px;
+// 						width: 75%;
+// 						height: 1px;
+// 						background-color: $brd-grey;
+// 					}
+// 				}
+
+// 				&:last-child{
+// 					margin-bottom: 0;
+// 					&::before{
+// 						display: none;
+// 					}
+// 				}
+// 			}
+
+// 			@media screen and (max-width: 320px) {
+// 				&:nth-child(-n + 4){
+// 					margin-bottom: 40px;
+// 					&::before{
+// 						content: '';
+// 						bottom: -20px;
+// 					}
+// 				}
+// 				&:last-child{
+// 					margin-bottom: 0;
+// 				}
+// 			}
+
+// 		} //-end __work-item
+// 	}
+// }
