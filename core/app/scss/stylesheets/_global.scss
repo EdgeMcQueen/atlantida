@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "CrimsonTextRoman";
+
 }
 
 // Global styles
@@ -62,11 +62,22 @@ body {
 } // end icon
 
 // global section headline styles
+.section {
+  &--grey {
+    background-color: $bg-grey;
+  }
+  &--light {
+    background-color: $bg-light;
+  }
+  &--dark {
+    background-color: $bg-dark;
+  }
+}
 .section-header {
   display: block;
   margin: 0 auto;
   text-align: center;
-  @include font(em(20), 400, $amsdam);
+  @include font(rem(20), 400, $amsdam);
   text-transform: uppercase;
   white-space: nowrap;
   &__headline {
@@ -78,21 +89,23 @@ body {
       margin-bottom: 40px;
     }
     color: $font-dark;
-    border-bottom: 3px solid transparent;
+    border-bottom: em(5) solid transparent;
     border-left: none;
     border-right: none;
-    border-image: url(../img/other/divider-dark.png) 150 round;
+    border-image: url(../img/other/wave-divider.png) 2000 0 repeat;
     &--light {
       padding-top: 70px;
       color: $font-light;
-      border-image: url(../img/other/divider.png) 150 round;
+      border-image: url(../img/other/wave-divider-light.png) 2000 0 repeat;
     }
   }
 
   &__title {
-    margin-top: 38px;
-    margin-bottom: 58px;
-    font-family: "CrimsonTextRoman";
+    max-width: 85%;
+    margin: 0 auto 60px;
+    @include font(rem(14), 400, $crimsonRoman);
+    text-transform: capitalize;
+    white-space: normal;
     color: $font-dark;
     &--light {
       color: $font-light;

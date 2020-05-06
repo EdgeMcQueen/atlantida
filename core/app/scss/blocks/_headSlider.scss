@@ -29,12 +29,12 @@
     text-transform: uppercase;
     @include font(em(32), 400, $amsdam);
     border: {
-      top: 10px solid transparent;
-      bottom: 10px solid transparent;
+      top: em(7) solid transparent;
+      bottom: em(7) solid transparent;
     }
     border-left: none;
     border-right: none;
-    border-image: url(../img/other/divider.png) 150 round;
+    border-image: url(../img/other/wave-divider-light.png) 2000 0 repeat;
   }
 
   &__link {
@@ -47,6 +47,9 @@
     text-transform: capitalize;
     white-space: nowrap;
     @include font(em(20), 400, $monserrat);
+    &:hover {
+      color: $font-fgrey;
+    }
 
     &::before {
       content: url(../img/slider/Arrow.png);

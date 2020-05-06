@@ -1,0 +1,186 @@
+.services{
+	padding: 68px 0 83px;
+	background-image: url('../img/services/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include font(em(14), 400, $crimsonRoman);
+
+		&__body{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			flex-flow: row wrap;
+			box-sizing: border-box;
+
+			.services-card{
+				display: inline-flex;
+				flex-direction: column;
+				// justify-content: space-between;
+				align-items: center;
+				flex-basis: 180px;
+				max-width: 100%;
+				flex-grow: 1;
+				border-left: 2px solid $bb-s-color;
+				border-right: 2px solid $bb-s-color;
+				border-bottom: 2px solid $bb-s-color;
+				// height: 326px;
+				padding: 0 35px 42px 35px;
+				margin-right: 15px;
+				position: relative;
+				&::before,
+				&::after{
+					content: '';
+					position: absolute;
+					width: 102px;
+					height: 2px;
+					background: $bb-s-color;
+				}
+				&::before{
+					left: 0;
+				}
+				&::after{
+					right: 0;
+				}
+				&:last-child{
+					margin-right: 0;
+					margin-left: 15px;
+				}
+				&:nth-child(3){
+					margin-left: 15px;
+				}
+				&:nth-child(4n + 2){
+					margin-left: 15px;
+				}
+
+				&__header{
+					display: inherit;
+					align-items: center;
+					flex-direction: column;
+					justify-content: space-between;
+					height: 95px;
+					@include font(rem(13), 500, $monserrat);
+					&-icon{
+						position: relative;
+						top: -11px;
+						width: 60px;
+						display: inherit;
+						justify-content: center;
+						&::before{
+							content: '';
+							position: absolute;
+							top: -8px;
+							width: 60px;
+							height: 40px;
+						}
+
+						.icon__design{
+							display: inline-block;
+							width: 26px;
+							height: 25px;
+							position: relative;
+							top: 2px;
+							left: 2.5%;
+							background: url('../img/services/icon-idea.png');
+						}
+
+						.icon__webdesign{
+							display: inline-block;
+							width: 27px;
+							height: 21px;
+							position: relative;
+							top: 2px;
+							left: 2.5%;
+							background: url('../img/services/icon-display.png');
+						}
+
+						.icon__seoanalyt{
+							display: inline-block;
+							width: 24px;
+							height: 22px;
+							position: relative;
+							top: 2px;
+							left: 2.5%;
+							background: url('../img/services/icon-trade.png');
+						}
+
+						.icon__wordpress{
+							display: inline-block;
+							width: 21px;
+							height: 21px;
+							position: relative;
+							top: 2px;
+							left: 2.5%;
+							background: url('../img/services/icon-wordpress.png');
+						}
+
+					}
+
+					&-name{
+						display: inline-block;
+						text-align: center;
+						font:{
+							size: 0.929em;
+							weight: 600;
+						}
+						text-transform: uppercase;
+						color: $font-light;
+					}
+				}
+
+				&__body{
+					margin-top: 30px;
+
+					&-desription{
+						text-align: center;
+						line-height: 1.2em;
+						font:{
+							size: 1em;
+							weight: 550;
+						}
+						color: $font-light;
+					}
+
+				}
+					@media screen and (max-width: 768px) {
+						margin-bottom: 30px;
+						&:last-child{
+							margin-right: 0;
+							margin-left: 15px;
+						}
+						&:nth-child(3){
+							margin-left: 0;
+						}
+						&:nth-child(4n + 2){
+							margin-left: 15px;
+							margin-right: 0;
+						}
+						&:nth-last-child(-n+2){
+							margin-bottom: 0;
+						}
+					}
+
+					@media screen and (max-width: 425px) {
+						flex-grow: 0;
+						flex-basis: 250px;
+						padding: 0 22px 30px 22px;
+						&:nth-child(-n+2){
+							margin-left: 0;
+							margin-right: 0;
+						}
+						&:nth-last-child(-n+2){
+							margin-left: 0;
+							margin-right: 0;
+							margin-bottom: 30px;
+						}
+						&:last-child{
+							margin-bottom: 0;
+						}
+					}
+
+			}//--end .services-card
+
+		}//--end .services-section__body
+		@media screen and (max-width: 768px) {
+			background: radial-gradient(circle, rgba(34,34,37,1) 0%, rgba(43,44,49,1) 100%);
+		}
+	} //--end .services

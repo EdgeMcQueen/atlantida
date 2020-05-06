@@ -1,105 +1,103 @@
 .aboutus {
-	padding: 72px 0 60px;
-	background-color: $bg-grey;
+  padding: 72px 0 60px;
 
-	& .aboutus-content {
-		background-color: $bg-light;
-		@include font(em(13), 600, $monserrat);
-		padding: 0 70px;
-		&__img {
-			width: 100%;
-			height: auto;
-		}
-		&__seotxt {
-			text-align: center;
-			@include sm-block() {
-				text-align: right;
-			}
-			@include font(em(14), 400, $crimsonRoman);
-		}
-		&__link-wrap {
-			text-align: center;
-			padding: 50px 0;
-		}
-		&__link {
-			display: inline-block;
-			padding: 14px 26px;
-			color: $font-dark;
-			background: transparent;
-			border: 2px solid $bdr-dark;
-			&:hover{
-				background: $bg-dark;
-				color: $font-light;
-			}
-		}
-	} // end .aboutus-content
 
-	& .aboutus-aboutwork {
-		width: 100%;
-		display: flex;
-		flex-wrap: wrap;
-		@include sm-block() {
-			flex-wrap: nowrap;
-		}
+  & .aboutus-content {
+    background-color: $bg-light;
+    @include font(em(13), 600, $monserrat);
+    padding: 0 70px;
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+    &__seotxt {
+      text-align: center;
+      @include sm-block() {
+        text-align: right;
+      }
+      @include font(em(14), 400, $crimsonRoman);
+    }
+    &__link-wrap {
+      text-align: center;
+      padding: 50px 0;
+    }
+    &__link {
+      display: inline-block;
+      padding: 14px 26px;
+      margin-bottom: 5px;
+      color: $font-dark;
+      background: transparent;
+      border: 2px solid $bdr-dark;
+      &:hover {
+        background: $bg-dark;
+        color: $font-light;
+      }
+    }
+  } // end .aboutus-content
 
-		&__work-item{
-			display: block;
-			padding: em(25);
-			@include sm-block() {
-			}
-			@include lg-block() {
-				padding: 0 em(90) em(40);
-			}
-			margin: em(40) 0;
-			text-align: center;
-			border-bottom: 1px solid $bdr-grey;
-			@include sm-block() {
-				border-bottom: none;
-			}
-				&:nth-child(1){
-					@include sm-block() {
-						border-right: 1px solid $bdr-grey;
-					}
-				}
-				&:nth-child(2){
-					@include sm-block() {
-						border-right: 1px solid $bdr-grey;
-					}
-				}
-				&:nth-child(3){
-					@include sm-block() {
-						border-right: 1px solid $bdr-grey;
-					}
-				}
+  & .aboutus-aboutwork {
+    margin-top: 40px;
+    text-align: center;
+    @include md-block() {
+      text-align: left;
+    } 
+    &__work-item {
+      display: inline-block;
+      @include size-xs(10);
+      @include size-sm(6);
+      @include size-md(4);
+      padding: 40px 0;
+      text-align: center;
+      border-bottom: 1px solid $bdr-grey;
+      @include md-block() {
+        max-width: calc(25% - 4px);
+        border-bottom: none;
+      } 
+      @include md-block() {
 
-			.work-item{
-				&__icon {
-					display: block;
-					margin: 0 auto;
+      }
+      &:nth-child(1) {
+        @include md-block() {
+          border-right: 1px solid $bdr-grey;
+        }
+      }
+      &:nth-child(2) {
+        @include md-block() {
+          border-right: 1px solid $bdr-grey;
+        }
+      }
+      &:nth-child(3) {
+        @include md-block() {
+          border-right: 1px solid $bdr-grey;
+        }
+      }
 
-				}
-				&__info {
-					display: block;
-					font:{
-						size: 0.929em;
-						weight: 550;
-					}
-					margin: 22px 0 28px;
-					color: $font-dark;
-				}
+      .work-item {
+        &__icon {
+          display: block;
+          margin: 0 auto;
+        }
+        &__info {
+          display: block;
+          font: {
+            size: 0.929em;
+            weight: 550;
+          }
+          margin: 22px 0 28px;
+          color: $font-dark;
+        }
 
-				&__count{
-					display: block;
-					font:{
-						size: 2.8em;
-						weight: 600;
-					}
-					color: $font-dark;
-				}
-			}
-
-		} //-end __work-item
-	}
+        &__count {
+          display: block;
+          font: {
+            size: 2.8em;
+            weight: 600;
+          }
+          color: $font-dark;
+        }
+      }
+    } //-end __work-item
+  }
 }
 
 // .aboutus{
@@ -205,11 +203,11 @@
 // 					@media screen and (max-width: 768px) {
 // 						padding: 45px 32px 30px 32px;
 // 					}
-	
+
 // 					@media screen and (max-width: 375px) {
 // 						padding: 30px 24px 25px 24px;
 // 					}
-	
+
 // 			}
 
 // 	} // end -card
