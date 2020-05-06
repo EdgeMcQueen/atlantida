@@ -6,33 +6,53 @@
 	@include font(em(14), 400, $crimsonRoman);
 
 		&__body{
-			width: 100%;
-			display: flex;
-			justify-content: center;
-			flex-flow: row wrap;
+			display: block;
 			box-sizing: border-box;
+			text-align: center;
 
 			.services-card{
-				display: inline-flex;
-				flex-direction: column;
-				// justify-content: space-between;
-				align-items: center;
-				flex-basis: 180px;
-				max-width: 100%;
-				flex-grow: 1;
-				border-left: 2px solid $bb-s-color;
-				border-right: 2px solid $bb-s-color;
-				border-bottom: 2px solid $bb-s-color;
-				// height: 326px;
-				padding: 0 35px 42px 35px;
-				margin-right: 15px;
 				position: relative;
+				display: inline-block;
+				@include size-xs(11);
+				@include size-sm(5);
+				@include size-md(4);
+				@include size-lg(3);
+				@include sm-block() {
+					width: 100%;
+					max-width: calc(45% - 30px);
+				}
+				@include md-block() {
+					width: 100%;
+					max-width: calc(45% - 30px);
+				}
+				@include lg-block() {
+					width: 100%;
+					max-width: 20%;
+				}
+				@include xl-block() {
+					width: 100%;
+					max-width: 18%;
+				}
+				padding: 55px 15px 45px;
+				margin-bottom: 30px;
+				border: 2px solid $bb-s-color;
+				border-top: none;
 				&::before,
 				&::after{
 					content: '';
 					position: absolute;
+					top: 0;
 					width: 102px;
 					height: 2px;
+					@include sm-block() {
+						width: 75px;
+					}
+					@include md-block() {
+						width: 100px;
+					}
+					@include lg-block() {
+						width: 75px;
+					}
 					background: $bb-s-color;
 				}
 				&::before{
@@ -41,30 +61,15 @@
 				&::after{
 					right: 0;
 				}
-				&:last-child{
-					margin-right: 0;
-					margin-left: 15px;
-				}
-				&:nth-child(3){
-					margin-left: 15px;
-				}
-				&:nth-child(4n + 2){
-					margin-left: 15px;
-				}
 
 				&__header{
-					display: inherit;
 					align-items: center;
-					flex-direction: column;
-					justify-content: space-between;
-					height: 95px;
 					@include font(rem(13), 500, $monserrat);
 					&-icon{
-						position: relative;
+						position: absolute;
 						top: -11px;
-						width: 60px;
-						display: inherit;
-						justify-content: center;
+						left: 50%;
+						transform: translateX(-50%);
 						&::before{
 							content: '';
 							position: absolute;
@@ -118,10 +123,7 @@
 					&-name{
 						display: inline-block;
 						text-align: center;
-						font:{
-							size: 0.929em;
-							weight: 600;
-						}
+						@include font(rem(14), 600);
 						text-transform: uppercase;
 						color: $font-light;
 					}
@@ -133,54 +135,13 @@
 					&-desription{
 						text-align: center;
 						line-height: 1.2em;
-						font:{
-							size: 1em;
-							weight: 550;
-						}
+						@include font(rem(16), 500);
 						color: $font-light;
 					}
 
 				}
-					@media screen and (max-width: 768px) {
-						margin-bottom: 30px;
-						&:last-child{
-							margin-right: 0;
-							margin-left: 15px;
-						}
-						&:nth-child(3){
-							margin-left: 0;
-						}
-						&:nth-child(4n + 2){
-							margin-left: 15px;
-							margin-right: 0;
-						}
-						&:nth-last-child(-n+2){
-							margin-bottom: 0;
-						}
-					}
-
-					@media screen and (max-width: 425px) {
-						flex-grow: 0;
-						flex-basis: 250px;
-						padding: 0 22px 30px 22px;
-						&:nth-child(-n+2){
-							margin-left: 0;
-							margin-right: 0;
-						}
-						&:nth-last-child(-n+2){
-							margin-left: 0;
-							margin-right: 0;
-							margin-bottom: 30px;
-						}
-						&:last-child{
-							margin-bottom: 0;
-						}
-					}
 
 			}//--end .services-card
 
 		}//--end .services-section__body
-		@media screen and (max-width: 768px) {
-			background: radial-gradient(circle, rgba(34,34,37,1) 0%, rgba(43,44,49,1) 100%);
-		}
 	} //--end .services
