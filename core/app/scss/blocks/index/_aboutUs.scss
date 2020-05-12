@@ -1,7 +1,6 @@
 .aboutus {
   padding: 72px 0 60px;
 
-
   & .aboutus-content {
     background-color: $bg-light;
     @include font(em(13), 600, $monserrat);
@@ -54,7 +53,6 @@
         border-bottom: none;
       }
       @include md-block() {
-
       }
       &:nth-child(1) {
         @include md-block() {

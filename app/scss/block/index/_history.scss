@@ -1,13 +1,9 @@
 .history{
-
-	&-section{
-		padding: 55px 0 82px;
-		background: $bs-hist;
-
+	background: $bs-hist;
 		&__body{
 			// margin-top: 44px;
 		}
-	} // section
+	}
 
 	.col-6{
 		flex: 0 0 50%;

@@ -1,147 +1,123 @@
-.services{
-	padding: 68px 0 83px;
-	background-image: url('../img/services/background.png');
-	background-repeat: no-repeat;
-	background-size: cover;
-	@include font(em(14), 400, $crimsonRoman);
+.services {
+  padding: 68px 0 83px;
+  background-image: url("../img/services/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include font(em(14), 400, $crimsonRoman);
 
-		&__body{
-			display: block;
-			box-sizing: border-box;
-			text-align: center;
+  &__body {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
 
-			.services-card{
-				position: relative;
-				display: inline-block;
-				@include size-xs(11);
-				@include size-sm(5);
-				@include size-md(4);
-				@include size-lg(3);
-				@include sm-block() {
-					width: 100%;
-					max-width: calc(45% - 30px);
-				}
-				@include md-block() {
-					width: 100%;
-					max-width: calc(45% - 30px);
-				}
-				@include lg-block() {
-					width: 100%;
-					max-width: 20%;
-				}
-				@include xl-block() {
-					width: 100%;
-					max-width: 18%;
-				}
-				padding: 55px 15px 45px;
-				margin-bottom: 30px;
-				border: 2px solid $bb-s-color;
-				border-top: none;
-				&::before,
-				&::after{
-					content: '';
-					position: absolute;
-					top: 0;
-					width: 102px;
-					height: 2px;
-					@include sm-block() {
-						width: 75px;
-					}
-					@include md-block() {
-						width: 100px;
-					}
-					@include lg-block() {
-						width: 75px;
-					}
-					background: $bb-s-color;
-				}
-				&::before{
-					left: 0;
-				}
-				&::after{
-					right: 0;
-				}
+    .services-card {
+      position: relative;
+      display: inline-block;
+      @include size-xs(11);
+      @include size-sm(5);
+      @include size-md(4);
+      @include size-lg(3);
+      @include sm-block() {
+        width: 100%;
+        max-width: calc(45% - 30px);
+      }
+      @include md-block() {
+        width: 100%;
+        max-width: calc(45% - 30px);
+      }
+      @include lg-block() {
+        width: 100%;
+        max-width: 20%;
+      }
+      @include xl-block() {
+        width: 100%;
+        max-width: 18%;
+      }
+      padding: 55px 15px 45px;
+      margin-bottom: 30px;
+      border: 2px solid $bb-s-color;
+      border-top: none;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 102px;
+        height: 2px;
+        @include sm-block() {
+          width: 75px;
+        }
+        @include md-block() {
+          width: 100px;
+        }
+        @include lg-block() {
+          width: 75px;
+        }
+        background: $bb-s-color;
+      }
+      &::before {
+        left: 0;
+      }
+      &::after {
+        right: 0;
+      }
 
-				&__header{
-					align-items: center;
-					@include font(rem(13), 500, $monserrat);
-					&-icon{
-						position: absolute;
-						top: -11px;
-						left: 50%;
-						transform: translateX(-50%);
-						&::before{
-							content: '';
-							position: absolute;
-							top: -8px;
-							width: 60px;
-							height: 40px;
-						}
+      &__header {
+        display: block;
+        align-items: center;
+        @include font(rem(13), 500, $monserrat);
+        &-icon {
+          position: absolute;
+          top: -11px;
+          left: 50%;
+          transform: translateX(-50%);
+          &::before {
+            content: "";
+            position: absolute;
+            top: -8px;
+            width: 60px;
+            height: 40px;
+          }
+          .icon--sizes {
+            display: block;
+            width: rem(26);
+            height: rem(26);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .icon__design {
+            background-image: url("../img/services/icon-idea.png");
+          }
+          .icon__webdesign {
+            background-image: url("../img/services/icon-display.png");
+          }
+          .icon__seoanalyt {
+            background-image: url("../img/services/icon-trade.png");
+          }
+          .icon__wordpress {
+            background-image: url("../img/services/icon-wordpress.png");
+          }
+        }
 
-						.icon__design{
-							display: inline-block;
-							width: 26px;
-							height: 25px;
-							position: relative;
-							top: 2px;
-							left: 2.5%;
-							background: url('../img/services/icon-idea.png');
-						}
+        &-name {
+          display: inline-block;
+          max-width: rem(110);
+          @include font(rem(14), 600);
+          text-transform: uppercase;
+          color: $font-light;
+        }
+      }
 
-						.icon__webdesign{
-							display: inline-block;
-							width: 27px;
-							height: 21px;
-							position: relative;
-							top: 2px;
-							left: 2.5%;
-							background: url('../img/services/icon-display.png');
-						}
+      &__body {
+        margin-top: 30px;
 
-						.icon__seoanalyt{
-							display: inline-block;
-							width: 24px;
-							height: 22px;
-							position: relative;
-							top: 2px;
-							left: 2.5%;
-							background: url('../img/services/icon-trade.png');
-						}
-
-						.icon__wordpress{
-							display: inline-block;
-							width: 21px;
-							height: 21px;
-							position: relative;
-							top: 2px;
-							left: 2.5%;
-							background: url('../img/services/icon-wordpress.png');
-						}
-
-					}
-
-					&-name{
-						display: inline-block;
-						text-align: center;
-						@include font(rem(14), 600);
-						text-transform: uppercase;
-						color: $font-light;
-					}
-				}
-
-				&__body{
-					margin-top: 30px;
-
-					&-desription{
-						text-align: center;
-						line-height: 1.2em;
-						@include font(rem(16), 500);
-						color: $font-light;
-					}
-
-				}
-
-			}//--end .services-card
-
-		}//--end .services-section__body
-	} //--end .services
+        &-desription {
+          text-align: center;
+          line-height: 1.2em;
+          @include font(rem(16), 500);
+          color: $font-light;
+        }
+      }
+    } //--end .services-card
+  } //--end .services-section__body
+} //--end .services

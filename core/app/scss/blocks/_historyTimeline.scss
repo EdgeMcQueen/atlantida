@@ -1,0 +1,173 @@
+// .timeline {
+//   position: relative;
+//   overflow: auto;
+//   width: 100%;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 50%;
+//     margin-left: -1px;
+//     height: 100%;
+//     width: 2px;
+//     background-color: $timeline-color;
+//   }
+//   margin-top: 40px;
+//   &__cyrcle {
+//     display: block;
+//     height: 70px;
+//     margin-bottom: 30px;
+//     &::before {
+//       content: "";
+//       box-sizing: border-box;
+//       position: absolute;
+//       left: 50%;
+//       margin-left: -35px;
+//       display: block;
+//       width: 70px;
+//       height: 70px;
+//       border-radius: 50%;
+//       border: 2px solid $bdr-dark;
+//       background-color: $bs-hist;
+//     }
+//   }
+//   & .timeline-item--wrapper {
+//     position: relative;
+//     display: block;
+//     height: 20px;
+//     margin: 0;
+//     margin-bottom: 30px;
+//
+//     &::before {
+//       content: "";
+//       position: absolute;
+//       left: 50%;
+//       margin-left: -10px;
+//       display: block;
+//       width: 20px;
+//       height: 20px;
+//       border-radius: 50%;
+//       background-color: $timeline-color;
+//     }
+//     &:nth-child(even) {
+//       & .timeline-item {
+//       }
+//       &::before {
+//         content: "";
+//       }
+//     }
+//     &:nth-child(odd) {
+//       & .timeline-item {
+//         visibility: hidden;
+//       }
+//       &::before {
+//         content: "";
+//         background-color: $timeline-item-inverted;
+//       }
+//     }
+//   }
+//
+//   & .timeline-item {
+//     position: relative;
+//     display: block;
+//     width: 45%;
+//     margin-bottom: 30px;
+//     border: 1px solid #000;
+//     &__box {
+//       margin-bottom: 50px;
+//     }
+//     &--left {
+//       float: left;
+//       clear: both;
+//     }
+//     &--right {
+//       float: right;
+//       clear: both;
+//     }
+//   }
+// }
+
+.timeline {
+  position: relative;
+  width: 100%;
+  @include font(rem(13), 400, $monserrat);
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    height: 100%;
+    width: 2px;
+    background-color: $timeline-color;
+  }
+  & * {
+    box-sizing: border-box;
+  }
+  & .timeline-item {
+    position: relative;
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 35px;
+    border: 1px solid $bb-s-color;
+    &--left {
+      left: 0;
+      padding: 30px 60px 30px 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        right: -34px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $timeline-color;
+      }
+    }
+    &--right {
+      top: 35px;
+      left: 40px;
+      padding: 30px 25px 30px 60px;
+      &::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        top: 15px;
+        left: -32px;
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $timeline-color;
+      }
+    }
+  }
+  &__cyrcle {
+    display: block;
+    height: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    &::before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      margin-left: -35px;
+      display: block;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid $bdr-dark;
+      background-color: $bs-hist;
+    }
+  }
+  &__year {
+    position: relative;
+    z-index: 11;
+    top: calc(50% - 7.5px);
+  }
+
+}
